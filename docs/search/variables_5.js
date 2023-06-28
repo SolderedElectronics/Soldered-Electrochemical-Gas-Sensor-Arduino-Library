@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pin_0',['pin',['../class_sensor.html#a0efecf34431610766469857f25e113da',1,'Sensor']]]
+  ['refcn_0',['refcn',['../structsensor_type.html#a23edb4d4a061dee3bb00de9c6c51ebad',1,'sensorType']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initializenative_0',['initializeNative',['../class_sensor.html#adb537c76173019fddf84b2d89e6c6559',1,'Sensor::initializeNative()'],['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()']]]
+  ['begin_0',['begin',['../class_electrochemical_gas_sensor.html#a6808282d4d9e0a45c85c7a08e34650a9',1,'ElectrochemicalGasSensor::begin()'],['../class_a_d_s1_x15.html#ab01694a656e193d7f85ecf20a3774699',1,'ADS1X15::begin(uint8_t sda, uint8_t scl)'],['../class_a_d_s1_x15.html#a9fb6b66d3e0ff549a200e2907d145a02',1,'ADS1X15::begin()']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['err_0',['err',['../class_easy_c.html#a8b880d5daf116adde0cc436f1e4c0853',1,'EasyC']]]
+  ['modecn_0',['modecn',['../structsensor_type.html#a51493d470b68144264692870c25df5f0',1,'sensorType']]]
 ];

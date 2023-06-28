@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readdata_0',['readData',['../class_easy_c.html#a9a3d39be50b348768bc4b5dea3dae01a',1,'EasyC']]],
-  ['readregister_1',['readRegister',['../class_easy_c.html#a45bd6c915c1fa0998e273f69ee2d2376',1,'EasyC']]]
+  ['configure_0',['configure',['../class_l_m_p91000.html#ad80859ef81c75345c11f552d573b5323',1,'LMP91000']]],
+  ['configurelmp_1',['configureLMP',['../class_electrochemical_gas_sensor.html#adb4e36af5469765f8b11f834211dc920',1,'ElectrochemicalGasSensor']]]
 ];

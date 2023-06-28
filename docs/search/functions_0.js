@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['begin_0',['begin',['../class_easy_c.html#a1b5a82b8a59daea79de76e496457e176',1,'EasyC::begin()'],['../class_easy_c.html#a9e71467da6f38cbe47b10e96694a4f91',1,'EasyC::begin(uint8_t _address)']]]
+  ['_5freadadc_0',['_readADC',['../class_a_d_s1_x15.html#acd52841f5574b3bced15bd1bc6d1ed2f',1,'ADS1X15']]],
+  ['_5freadregister_1',['_readRegister',['../class_a_d_s1_x15.html#afdef2e03c37817e94c01b36c1d6d763f',1,'ADS1X15']]],
+  ['_5frequestadc_2',['_requestADC',['../class_a_d_s1_x15.html#a477c9ee511d7c5457e581aa23075af3d',1,'ADS1X15']]],
+  ['_5fwriteregister_3',['_writeRegister',['../class_a_d_s1_x15.html#a971bba4f621a136dc62331b80c6a5d6d',1,'ADS1X15']]]
 ];

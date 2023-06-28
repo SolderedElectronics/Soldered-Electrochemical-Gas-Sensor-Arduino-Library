@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['begindone_0',['beginDone',['../class_easy_c.html#a2f55de657a84e73edda23dae91d30436',1,'EasyC']]]
+  ['adcaddr_0',['adcAddr',['../class_electrochemical_gas_sensor.html#addc289cace70c3fdbbdad7787e316a48',1,'ElectrochemicalGasSensor']]],
+  ['ads_1',['ads',['../class_electrochemical_gas_sensor.html#aa91d3c1713d2445c26dbabe444222ed6',1,'ElectrochemicalGasSensor']]]
 ];
