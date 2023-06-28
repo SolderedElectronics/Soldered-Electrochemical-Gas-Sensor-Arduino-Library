@@ -15,9 +15,9 @@
  * @brief                   Constructor on custom address
  *
  * @param sensorType _t     The type of the sensor
- * 
+ *
  * @param uint8_t _adcAddr  The custom address of the ADC
- * 
+ *
  */
 ElectrochemicalGasSensor::ElectrochemicalGasSensor(sensorType _t, uint8_t _adcAddr)
 {
@@ -27,9 +27,9 @@ ElectrochemicalGasSensor::ElectrochemicalGasSensor(sensorType _t, uint8_t _adcAd
 
 /**
  * @brief                   Init the sensor and begin measuring with the ADC, must be called before using
- * 
+ *
  * @returns                 True if it was successful, false if it failed
- * 
+ *
  */
 bool ElectrochemicalGasSensor::begin()
 {
@@ -52,9 +52,9 @@ bool ElectrochemicalGasSensor::begin()
 
 /**
  * @brief                   Configure the LMP91000, only has to be done once, see configLMP.ino for more details
- * 
+ *
  * @returns                 True if it was successful, false if it failed
- * 
+ *
  */
 bool ElectrochemicalGasSensor::configureLMP()
 {
@@ -62,15 +62,17 @@ bool ElectrochemicalGasSensor::configureLMP()
     uint8_t res = lmp->configure(type.tiacn, type.refcn, type.modecn);
 
     // Notify the user if the configuration went well or not
-    if(res == 1) return true;
-    else return false;
+    if (res == 1)
+        return true;
+    else
+        return false;
 }
 
 /**
  * @brief                   Make a measurement with the ADC and calculate the PPM value of the measured gas
- * 
+ *
  * @returns                 double value of the PPM
- * 
+ *
  */
 double ElectrochemicalGasSensor::getPPM()
 {
