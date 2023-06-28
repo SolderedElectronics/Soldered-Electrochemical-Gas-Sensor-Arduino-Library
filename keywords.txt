@@ -6,12 +6,20 @@
 # Datatypes (KEYWORD1)
 ##################################################
 
+ElectrochemicalGasSensor	KEYWORD1
+
 ##################################################
 # Methods and Functions (KEYWORD2)
 ##################################################
 
 begin	KEYWORD2
+configureLMP	KEYWORD2
+getPPM	KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)
 ##################################################
+
+SENSOR_NO	LITERAL1
+SENSOR_NO2	LITERAL1
+SENSOR_SO2	LITERAL1
