@@ -26,7 +26,7 @@
 #include "Electrochemical-Gas-Sensor-SOLDERED.h"
 
 // Create the sensor object with the according type
-ElectrochemicalGasSensor sensor(SENSOR_SO2, 0x49);
+ElectrochemicalGasSensor sensor(SENSOR_NO);
 
 // If you are using a custom I2C address, create the object like this:
 // ElectrochemicalGasSensor sensor(SENSOR_SO2, 0x4A);
@@ -64,7 +64,7 @@ void setup()
 void loop()
 {
     // Make the reading
-    float reading = sensor.getPPM();
+    double reading = sensor.getPPM();
     
     // Print the reading with 10 digits of precision
     Serial.print("Sensor reading: ");

@@ -80,9 +80,8 @@ double ElectrochemicalGasSensor::getPPM()
     int16_t rawReading = ads->readADC(0);
     double voltage = ads->toVoltage(rawReading);
 
-    // Calculate current in mA and calculate PPM based on datasheet
-    double current = voltage / type.tiaGainInKOhms; // Divide by TIA gain
-    double ppm = current / (type.nanoAmperesPerPPM * (double)1e-3);
-
+    // Calculate current and calculate PPM based on datasheet
+    double current = voltage / (type.tiaGainInKOhms * 1000); // Divide by TIA gain
+    double ppm = current / (type.nanoAmperesPerPPM * (double)1e-9);
     return ppm;
 }
