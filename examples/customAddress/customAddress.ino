@@ -58,7 +58,7 @@ void setup()
 void loop()
 {
     // Make the reading
-    float reading = sensor.getPPM();
+    double reading = sensor.getPPM();
     
     // Print the reading with 10 digits of precision
     Serial.print("Sensor reading: ");
