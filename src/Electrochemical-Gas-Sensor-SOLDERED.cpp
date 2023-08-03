@@ -49,7 +49,7 @@ bool ElectrochemicalGasSensor::begin()
     ads->setGain(1); // Set gain to 4.096V
 
     // Begin the config pin if it's set
-    if(configPin != -1)
+    if (configPin != -1)
     {
         pinMode(configPin, OUTPUT);
         digitalWrite(configPin, HIGH); // Disable LMP config
@@ -67,13 +67,15 @@ bool ElectrochemicalGasSensor::begin()
 bool ElectrochemicalGasSensor::configureLMP()
 {
     // If there is a pin set for configuring, pull it LOW
-    if(configPin != -1) digitalWrite(configPin, LOW);
-    
+    if (configPin != -1)
+        digitalWrite(configPin, LOW);
+
     // The data used for configuring is in sensorConfigData.h
     uint8_t res = lmp->configure(type.tiacn, type.refcn, type.modecn);
 
     // Disable config again
-    if(configPin != -1) digitalWrite(configPin, HIGH);
+    if (configPin != -1)
+        digitalWrite(configPin, HIGH);
 
     // Notify the user if the configuration went well or not
     if (res == 1)
