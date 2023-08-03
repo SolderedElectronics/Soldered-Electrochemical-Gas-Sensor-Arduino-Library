@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Electrochemical Gas Sensor Library: Class Index</title>
+<title>Electrochemical Gas Sensor Library: Change Log</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,7 +67,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('classes.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -92,26 +92,155 @@ $(document).ready(function(){initNavTree('classes.html',''); initResizable(); })
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Class Index</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Change Log</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_E">E</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a></div>
-<div class="classindex">
-<dl class="classindex even">
-<dt class="alphachar"><a id="letter_A" name="letter_A">A</a></dt>
-<dd><a class="el" href="class_a_d_s1013.html">ADS1013</a></dd><dd><a class="el" href="class_a_d_s1014.html">ADS1014</a></dd><dd><a class="el" href="class_a_d_s1015.html">ADS1015</a></dd><dd><a class="el" href="class_a_d_s1113.html">ADS1113</a></dd><dd><a class="el" href="class_a_d_s1114.html">ADS1114</a></dd><dd><a class="el" href="class_a_d_s1115.html">ADS1115</a></dd><dd><a class="el" href="class_a_d_s1_x15.html">ADS1X15</a></dd></dl>
-<dl class="classindex odd">
-<dt class="alphachar"><a id="letter_E" name="letter_E">E</a></dt>
-<dd><a class="el" href="class_electrochemical_gas_sensor.html">ElectrochemicalGasSensor</a></dd></dl>
-<dl class="classindex even">
-<dt class="alphachar"><a id="letter_L" name="letter_L">L</a></dt>
-<dd><a class="el" href="class_l_m_p91000.html">LMP91000</a></dd></dl>
-<dl class="classindex odd">
-<dt class="alphachar"><a id="letter_S" name="letter_S">S</a></dt>
-<dd><a class="el" href="structsensor_type.html">sensorType</a></dd></dl>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p><a class="anchor" id="autotoc_md9"></a>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="http://keepachangelog.com/">Keep a Changelog</a> and this project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
+<ul>
+<li>update and add examples</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md10"></a>
+[0.3.10] - 2023-06-07</h1>
+<ul>
+<li>fix NANO RP2040</li>
+<li>update and add examples</li>
+<li>minor edits</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md11"></a>
+[0.3.9] - 2023-01-21</h1>
+<ul>
+<li>update GitHub actions</li>
+<li>update license 2023</li>
+<li>update readme.md</li>
+<li>minor edits</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md12"></a>
+[0.3.8] - 2022-10-17</h1>
+<ul>
+<li>add RP2040 support (kudos to intubun)</li>
+<li>simplified <a class="el" href="_c_h_a_n_g_e_l_o_g_8md.html">changelog.md</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md13"></a>
+[0.3.7] - 2022-06-21</h1>
+<ul>
+<li>fix ESP32 Wire.begin datatype</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md14"></a>
+[0.3.6] - 2022-03-10</h1>
+<ul>
+<li>add <a class="el" href="_c_h_a_n_g_e_l_o_g_8md.html">CHANGELOG.md</a>: moved history in <a class="el" href="_a_d_s1_x15_8cpp.html">ADS1x15.cpp</a> to this file.</li>
+<li>add default parameters for single channel devices.<ul>
+<li><b>readADC(uint8_t pin = 0);</b></li>
+<li><b>requestADC(uint8_t pin = 0);</b></li>
+</ul>
+</li>
+<li>add two examples for the <b><a class="el" href="class_a_d_s1114.html">ADS1114</a></b> (single channel devices)</li>
+<li>update readme.md.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md15"></a>
+[0.3.5] - 2022-01-21</h1>
+<ul>
+<li>fix #36 support for Nano Every</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md16"></a>
+[0.3.4] - 2021-12-11</h1>
+<ul>
+<li>add unit test constants.</li>
+<li>update library.json, license,</li>
+<li>minor edits including layout</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md17"></a>
+[0.3.3] - 2021-10-17</h1>
+<ul>
+<li>update build-CI (esp32), readme.md, keywords.txt</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md18"></a>
+[0.3.2] - 2021-10-07</h1>
+<ul>
+<li>added examples</li>
+<li>update readme</li>
+<li>fix build-CI;</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md19"></a>
+[0.3.1] - 2021-04-25</h1>
+<ul>
+<li>add get/setClock() for Wire speed</li>
+<li>add reset()</li>
+<li>fix issue #22</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md20"></a>
+[0.3.0] - 2021-03-29</h1>
+<ul>
+<li>add Wire parameter to constructors.</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md22"></a>
+0.2.7  - 2020-09-27</h2>
+<ul>
+<li>redo readRegister()</li>
+<li>getValue()</li>
+<li>getError()</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md23"></a>
+[0.2.6] - 2020-09-01</h2>
+<ul>
+<li>fix #12</li>
+<li>fix getMaxVoltage</li>
+<li>refactor</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md24"></a>
+[0.2.5] - 2020-08-26</h2>
+<ul>
+<li>add missing readADC_Differential_X_X()</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md25"></a>
+[0.2.4] - 2020-08-26</h2>
+<ul>
+<li>check readme.md and minor fixes</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md26"></a>
+[0.2.3] - 2020-08-20</h2>
+<ul>
+<li>add comparator code</li>
+<li>add async mode</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md27"></a>
+[0.2.2] - 2020-08-18</h2>
+<ul>
+<li>add begin(sda, scl) for ESP32</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md28"></a>
+[0.2.1] - 2020-08-15</h2>
+<ul>
+<li>fix issue #2 gain</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md29"></a>
+[0.2.0] - 2020-04-08</h2>
+<ul>
+<li>initial release;</li>
+<li>refactor ad fundum;</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md31"></a>
+[0.1.0] - 2017-07-31</h2>
+<ul>
+<li>removed pre 1.0 support;</li>
+<li>added getVoltage</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md32"></a>
+[0.0.1] - 2013-03-24</h2>
+<ul>
+<li>first working version</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md33"></a>
+[0.0.0] - 2013-03-24</h2>
+<ul>
+<li>initial version </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath">

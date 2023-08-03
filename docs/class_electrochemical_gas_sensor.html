@@ -105,9 +105,9 @@ $(document).ready(function(){initNavTree('class_electrochemical_gas_sensor.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a72e8d96fbf0fd6aff6c4368a719cc3a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_electrochemical_gas_sensor.html#a72e8d96fbf0fd6aff6c4368a719cc3a9">ElectrochemicalGasSensor</a> (<a class="el" href="structsensor_type.html">sensorType</a> _t, uint8_t _adcAddr=DEFAULT_ADC_ADDR)</td></tr>
-<tr class="memdesc:a72e8d96fbf0fd6aff6c4368a719cc3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor on custom address.  <br /></td></tr>
-<tr class="separator:a72e8d96fbf0fd6aff6c4368a719cc3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be87e9fe2324b46c277af2f9eadce3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_electrochemical_gas_sensor.html#a6be87e9fe2324b46c277af2f9eadce3b">ElectrochemicalGasSensor</a> (<a class="el" href="structsensor_type.html">sensorType</a> _t, uint8_t _adcAddr=DEFAULT_ADC_ADDR, uint8_t _configPin=-1)</td></tr>
+<tr class="memdesc:a6be87e9fe2324b46c277af2f9eadce3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor on custom address.  <br /></td></tr>
+<tr class="separator:a6be87e9fe2324b46c277af2f9eadce3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6808282d4d9e0a45c85c7a08e34650a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_electrochemical_gas_sensor.html#a6808282d4d9e0a45c85c7a08e34650a9">begin</a> ()</td></tr>
 <tr class="memdesc:a6808282d4d9e0a45c85c7a08e34650a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init the sensor and begin measuring with the ADC, must be called before using.  <br /></td></tr>
 <tr class="separator:a6808282d4d9e0a45c85c7a08e34650a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,10 +128,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:addc289cace70c3fdbbdad7787e316a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34239d09a2b5e97cae243055b9363cf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsensor_type.html">sensorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_electrochemical_gas_sensor.html#a34239d09a2b5e97cae243055b9363cf2">type</a></td></tr>
 <tr class="separator:a34239d09a2b5e97cae243055b9363cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033190237a42a5573b34b91461ec35ca"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_electrochemical_gas_sensor.html#a033190237a42a5573b34b91461ec35ca">configPin</a></td></tr>
+<tr class="separator:a033190237a42a5573b34b91461ec35ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a72e8d96fbf0fd6aff6c4368a719cc3a9" name="a72e8d96fbf0fd6aff6c4368a719cc3a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72e8d96fbf0fd6aff6c4368a719cc3a9">&#9670;&#160;</a></span>ElectrochemicalGasSensor()</h2>
+<a id="a6be87e9fe2324b46c277af2f9eadce3b" name="a6be87e9fe2324b46c277af2f9eadce3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be87e9fe2324b46c277af2f9eadce3b">&#9670;&#160;</a></span>ElectrochemicalGasSensor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,7 +148,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>_adcAddr</em> = <code>DEFAULT_ADC_ADDR</code>&#160;</td>
+          <td class="paramname"><em>_adcAddr</em> = <code>DEFAULT_ADC_ADDR</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>_configPin</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -273,6 +281,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a033190237a42a5573b34b91461ec35ca" name="a033190237a42a5573b34b91461ec35ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033190237a42a5573b34b91461ec35ca">&#9670;&#160;</a></span>configPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ElectrochemicalGasSensor::configPin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a49e28652c0718d293d255e6471e410b3" name="a49e28652c0718d293d255e6471e410b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49e28652c0718d293d255e6471e410b3">&#9670;&#160;</a></span>lmp</h2>
 
@@ -329,7 +359,7 @@ Private Attributes</h2></td></tr>
     <ul>
         <li class="navelem"><a class="el" href="class_electrochemical_gas_sensor.html">ElectrochemicalGasSensor</a></li>
         <li class="footer">
-            Generated on Thu Aug 3 2023 06:57:57 for Electrochemical Gas Sensor Library by <a href="http://www.doxygen.org/index.html">
+            Generated on Thu Aug 3 2023 13:28:37 for Electrochemical Gas Sensor Library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.7.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.

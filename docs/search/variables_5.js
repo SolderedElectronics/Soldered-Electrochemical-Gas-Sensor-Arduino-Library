@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['refcn_0',['refcn',['../structsensor_type.html#a23edb4d4a061dee3bb00de9c6c51ebad',1,'sensorType']]]
+  ['nanoamperesperppm_0',['nanoAmperesPerPPM',['../structsensor_type.html#a75054db014ac0cf59ba32de94f5146e0',1,'sensorType']]]
 ];
