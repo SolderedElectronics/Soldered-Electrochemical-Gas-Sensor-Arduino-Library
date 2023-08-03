@@ -1,3 +1,5 @@
+// https://github.com/WickedDevice/LMP91000 library by WickedDevice
+
 #ifndef LMP91000_H
 #define LMP91000_H
 

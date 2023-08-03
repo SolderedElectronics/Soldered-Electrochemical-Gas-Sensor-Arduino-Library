@@ -1,12 +1,13 @@
 /**
  **************************************************
  *
- * @file        simpleReading.ino
- * @brief       See how to make a simple reading of PPM of the gas your sensor is meant for
+ * @file        singleSensor.ino
+ * @brief       See how to init one sensor and make a simple reading of PPM of gas.
  * 
  *              To successfully run the sketch:
- *              -Connect the breakout to your Dasduino board via easyC
- *              -Run the sketch and open serial monitor at 115200 baud!
+ *              - Connect the breakout to your Dasduino board via easyC
+ *              - Connect LMPEN pin to GND so the breakout can be configured
+ *              - Run the sketch and open serial monitor at 115200 baud!
  *
  *              Electrochemical Gas Sensor Breakout: solde.red/333218
  *              Dasduino Core: www.solde.red/333037
@@ -24,10 +25,6 @@
 // Create the sensor object with the according type
 ElectrochemicalGasSensor sensor(SENSOR_NO2);
 
-// If you are using a custom I2C address, create the object like this:
-// ElectrochemicalGasSensor sensor(SENSOR_SO2, 0x4A);
-// For more info, see customAddress.ino
-
 void setup()
 {
     Serial.begin(115200); // For debugging
@@ -42,8 +39,19 @@ void setup()
             delay(100);
         }
     }
-
     Serial.println("Sensor initialized successfully!");
+
+    // Configure LMP91000
+    if (!sensor.configureLMP())
+    {
+        // Error? Notify the user and go to infinite loop
+        Serial.println("ERROR: Can't configure LMP91000!");
+        while (true)
+        {
+            delay(100);
+        }
+    }
+    Serial.println("Sensor configured successfully!");
 }
 
 void loop()

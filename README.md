@@ -8,6 +8,7 @@
 |        [Electrochemical Gas Sensor Breakout](https://www.solde.red/333218)             |
 
 OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC).
+This sensor is based on the LMP91000 Analog Frontend by Texas Instruments.
 
 ### Repository Contents
 

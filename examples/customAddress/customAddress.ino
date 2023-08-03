@@ -6,9 +6,9 @@
  *              This allows you to connect multiple Electrochemical Gas Sensor Breakouts with one Dasduino!
  *
  *              To successfully run the sketch:
- *              -Set your breakout's address with the jumpers on the board (info below)
- *              -Connect the breakout(s) to your Dasduino board via easyC
- *              -Run the sketch and open serial monitor at 115200 baud!
+ *              - Set your breakout's address with the jumpers on the board (info below)
+ *              - Connect the breakout(s) to your Dasduino board via easyC
+ *              - Run the sketch and open serial monitor at 115200 baud!
  *
  *              Electrochemical Gas Sensor Breakout: solde.red/333218
  *              Dasduino Core: www.solde.red/333037
@@ -51,7 +51,6 @@ void setup()
             delay(100);
         }
     }
-
     Serial.println("Sensor initialized successfully!");
 }
 
