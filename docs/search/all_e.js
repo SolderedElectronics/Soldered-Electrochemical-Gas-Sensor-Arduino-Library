@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['write_0',['write',['../class_l_m_p91000.html#ab08ccf7cdbc17190c3940d6adc422364',1,'LMP91000']]]
+  ['data_20rate_0',['Data rate',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md41',1,'']]],
+  ['description_1',['Description',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md35',1,'']]],
+  ['design_2',['Hardware design',['../index.html#autotoc_md2',1,'']]],
+  ['differential_3',['ReadADC Differential',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md43',1,'']]],
+  ['documentation_4',['Documentation',['../index.html#autotoc_md3',1,'']]]
 ];

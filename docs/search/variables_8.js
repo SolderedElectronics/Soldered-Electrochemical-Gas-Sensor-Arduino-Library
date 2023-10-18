@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tiacn_0',['tiacn',['../structsensor_type.html#a43509a93d5665a8b3f30066857b299ac',1,'sensorType']]],
-  ['tiagaininkohms_1',['tiaGainInKOhms',['../structsensor_type.html#ad23bc17eebe8e0068cb9d87b28fd0870',1,'sensorType']]],
-  ['type_2',['type',['../class_electrochemical_gas_sensor.html#a34239d09a2b5e97cae243055b9363cf2',1,'ElectrochemicalGasSensor']]]
+  ['sensor_5fco_0',['SENSOR_CO',['../sensor_config_data_8h.html#a7d2fa02042d642b5d413397fcd3ae6c1',1,'sensorConfigData.h']]],
+  ['sensor_5fno2_1',['SENSOR_NO2',['../sensor_config_data_8h.html#ad8f664c8ebc27c25e143057fdfadb5c6',1,'sensorConfigData.h']]]
 ];

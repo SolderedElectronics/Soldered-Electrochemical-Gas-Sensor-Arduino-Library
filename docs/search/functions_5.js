@@ -12,7 +12,8 @@ var searchData=
   ['getlastvalue_9',['getLastValue',['../class_a_d_s1_x15.html#a4bd88b63f57f43c7a04a97856e8090e2',1,'ADS1X15']]],
   ['getmaxvoltage_10',['getMaxVoltage',['../class_a_d_s1_x15.html#ae2ffe6bb7d95d74d0cc686ce624f9391',1,'ADS1X15']]],
   ['getmode_11',['getMode',['../class_a_d_s1_x15.html#a787b723fb7e8325b42e5eb16609d4e02',1,'ADS1X15']]],
-  ['getppm_12',['getPPM',['../class_electrochemical_gas_sensor.html#ad577d4129ef7b60d23a8313525a93154',1,'ElectrochemicalGasSensor']]],
-  ['getvalue_13',['getValue',['../class_a_d_s1_x15.html#a89c6de44019a8c9e6e2be0fe4664ff37',1,'ADS1X15']]],
-  ['getwireclock_14',['getWireClock',['../class_a_d_s1_x15.html#af36ba02d32e394e465398c2f78664487',1,'ADS1X15']]]
+  ['getppb_12',['getPPB',['../class_electrochemical_gas_sensor.html#a0b07563add9346ca4bc7192893907b5f',1,'ElectrochemicalGasSensor']]],
+  ['getppm_13',['getPPM',['../class_electrochemical_gas_sensor.html#ad577d4129ef7b60d23a8313525a93154',1,'ElectrochemicalGasSensor']]],
+  ['getvalue_14',['getValue',['../class_a_d_s1_x15.html#a89c6de44019a8c9e6e2be0fe4664ff37',1,'ADS1X15']]],
+  ['getwireclock_15',['getWireClock',['../class_a_d_s1_x15.html#af36ba02d32e394e465398c2f78664487',1,'ADS1X15']]]
 ];

@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['sensor_20breakout_20arduino_20library_0',['Electrochemical Gas Sensor Breakout Arduino library',['../index.html',1,'']]],
+  ['sensor_5fco_1',['SENSOR_CO',['../sensor_config_data_8h.html#a7d2fa02042d642b5d413397fcd3ae6c1',1,'sensorConfigData.h']]],
+  ['sensor_5fno2_2',['SENSOR_NO2',['../sensor_config_data_8h.html#ad8f664c8ebc27c25e143057fdfadb5c6',1,'sensorConfigData.h']]],
+  ['sensorconfigdata_2eh_3',['sensorConfigData.h',['../sensor_config_data_8h.html',1,'']]],
+  ['sensortype_4',['sensorType',['../structsensor_type.html',1,'']]],
+  ['setcomparatorlatch_5',['setComparatorLatch',['../class_a_d_s1_x15.html#ac38936613fab51d9d5b58989ba190c1c',1,'ADS1X15']]],
+  ['setcomparatormode_6',['setComparatorMode',['../class_a_d_s1_x15.html#a74ed0e3057954ba4af1f367afcb3a288',1,'ADS1X15']]],
+  ['setcomparatorpolarity_7',['setComparatorPolarity',['../class_a_d_s1_x15.html#ac0e7bc22eca6aac9ab5c4559b11a2d7f',1,'ADS1X15']]],
+  ['setcomparatorqueconvert_8',['setComparatorQueConvert',['../class_a_d_s1_x15.html#ab0bb9fc745f696a5d86513d325bbd275',1,'ADS1X15']]],
+  ['setcomparatorthresholdhigh_9',['setComparatorThresholdHigh',['../class_a_d_s1_x15.html#ab115b947453c7772b2f8a170b684e883',1,'ADS1X15']]],
+  ['setcomparatorthresholdlow_10',['setComparatorThresholdLow',['../class_a_d_s1_x15.html#aae23ecf929fb08f329db4701920d985b',1,'ADS1X15']]],
+  ['setdatarate_11',['setDataRate',['../class_a_d_s1_x15.html#af03dfa5e77bea05c22dd91b89753744e',1,'ADS1X15']]],
+  ['setgain_12',['setGain',['../class_a_d_s1_x15.html#a5ed082ffa5d6c02707ef3ee2c008caa1',1,'ADS1X15']]],
+  ['setmode_13',['setMode',['../class_a_d_s1_x15.html#a0e12598eaebf2222534f12aafad4435e',1,'ADS1X15']]],
+  ['setwireclock_14',['setWireClock',['../class_a_d_s1_x15.html#a7803d96900f984e54acc12cfced0787d',1,'ADS1X15']]],
+  ['setzerovoltage_15',['setZeroVoltage',['../class_electrochemical_gas_sensor.html#a1fae6b84d2946839c9481450af81eb86',1,'ElectrochemicalGasSensor']]],
+  ['should_16',['Should',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md55',1,'']]],
+  ['single_20mode_17',['ReadADC Single mode',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md42',1,'']]],
+  ['soldered_18',['About Soldered',['../index.html#autotoc_md5',1,'']]],
+  ['source_19',['Original source',['../index.html#autotoc_md6',1,'']]],
+  ['source_20license_20',['Open-source license',['../index.html#autotoc_md7',1,'']]],
+  ['specific_21',['RP2040 specific',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md52',1,'']]],
+  ['speed_22',['I2C clock speed',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md38',1,'']]],
+  ['src_2flibs_2fads1x15_2freadme_2emd_23',['README.md',['../src_2libs_2_a_d_s1_x15_2_r_e_a_d_m_e_8md.html',1,'']]],
+  ['status_24',['status',['../class_l_m_p91000.html#adae2d75643a99d839a77de0917669218',1,'LMP91000']]]
+];

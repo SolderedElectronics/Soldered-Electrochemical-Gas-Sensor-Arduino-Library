@@ -1,14 +1,16 @@
 var searchData=
 [
-  ['adcaddr_0',['adcAddr',['../class_electrochemical_gas_sensor.html#addc289cace70c3fdbbdad7787e316a48',1,'ElectrochemicalGasSensor']]],
-  ['ads_1',['ads',['../class_electrochemical_gas_sensor.html#aa91d3c1713d2445c26dbabe444222ed6',1,'ElectrochemicalGasSensor']]],
-  ['ads1013_2',['ADS1013',['../class_a_d_s1013.html',1,'ADS1013'],['../class_a_d_s1013.html#a160f24084b2303809903793ebb60e7b7',1,'ADS1013::ADS1013()']]],
-  ['ads1014_3',['ADS1014',['../class_a_d_s1014.html',1,'ADS1014'],['../class_a_d_s1014.html#aeb1926877c7365f5953e5ffcabf9a289',1,'ADS1014::ADS1014()']]],
-  ['ads1015_4',['ADS1015',['../class_a_d_s1015.html',1,'ADS1015'],['../class_a_d_s1015.html#a22723d4bb539e3e4e636e4fd779cefca',1,'ADS1015::ADS1015()']]],
-  ['ads1113_5',['ADS1113',['../class_a_d_s1113.html',1,'ADS1113'],['../class_a_d_s1113.html#ace50dfb1722565d3d42e344297d3bb76',1,'ADS1113::ADS1113()']]],
-  ['ads1114_6',['ADS1114',['../class_a_d_s1114.html',1,'ADS1114'],['../class_a_d_s1114.html#acb150d46d3afac22e07069a149755184',1,'ADS1114::ADS1114()']]],
-  ['ads1115_7',['ADS1115',['../class_a_d_s1115.html',1,'ADS1115'],['../class_a_d_s1115.html#a865d978e68b33068814d33b325f111ca',1,'ADS1115::ADS1115()']]],
-  ['ads1x15_8',['ADS1X15',['../class_a_d_s1_x15.html',1,'ADS1X15'],['../class_a_d_s1_x15.html#a688613f7024848088adbbbee70b23173',1,'ADS1X15::ADS1X15()']]],
-  ['ads1x15_2ecpp_9',['ADS1X15.cpp',['../_a_d_s1_x15_8cpp.html',1,'']]],
-  ['ads1x15_2eh_10',['ADS1X15.h',['../_a_d_s1_x15_8h.html',1,'']]]
+  ['1_200_202017_2007_2031_0',['[0.1.0] - 2017-07-31',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md31',1,'']]],
+  ['1_202013_2003_2024_1',['[0.0.1] - 2013-03-24',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md32',1,'']]],
+  ['1_202020_2008_2015_2',['[0.2.1] - 2020-08-15',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md28',1,'']]],
+  ['1_202021_2004_2025_3',['[0.3.1] - 2021-04-25',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md19',1,'']]],
+  ['10_4',['[0.3.6] - 2022-03-10',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md14',1,'']]],
+  ['10_2007_5',['[0.3.2] - 2021-10-07',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md18',1,'']]],
+  ['10_2017_6',['10 17',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md17',1,'[0.3.3] - 2021-10-17'],['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md12',1,'[0.3.8] - 2022-10-17']]],
+  ['10_202023_2006_2007_7',['[0.3.10] - 2023-06-07',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md10',1,'']]],
+  ['11_8',['[0.3.4] - 2021-12-11',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md16',1,'']]],
+  ['12_2011_9',['[0.3.4] - 2021-12-11',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md16',1,'']]],
+  ['15_10',['[0.2.1] - 2020-08-15',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md28',1,'']]],
+  ['17_11',['17',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md17',1,'[0.3.3] - 2021-10-17'],['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md12',1,'[0.3.8] - 2022-10-17']]],
+  ['18_12',['[0.2.2] - 2020-08-18',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md27',1,'']]]
 ];

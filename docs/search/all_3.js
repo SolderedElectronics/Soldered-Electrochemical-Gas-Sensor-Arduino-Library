@@ -1,8 +1,16 @@
 var searchData=
 [
-  ['change_20log_0',['Change Log',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html',1,'']]],
-  ['changelog_2emd_1',['CHANGELOG.md',['../_c_h_a_n_g_e_l_o_g_8md.html',1,'']]],
-  ['configpin_2',['configPin',['../class_electrochemical_gas_sensor.html#a033190237a42a5573b34b91461ec35ca',1,'ElectrochemicalGasSensor']]],
-  ['configure_3',['configure',['../class_l_m_p91000.html#ad80859ef81c75345c11f552d573b5323',1,'LMP91000']]],
-  ['configurelmp_4',['configureLMP',['../class_electrochemical_gas_sensor.html#adb4e36af5469765f8b11f834211dc920',1,'ElectrochemicalGasSensor']]]
+  ['3_200_202021_2003_2029_0',['[0.3.0] - 2021-03-29',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md20',1,'']]],
+  ['3_201_202021_2004_2025_1',['[0.3.1] - 2021-04-25',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md19',1,'']]],
+  ['3_2010_202023_2006_2007_2',['[0.3.10] - 2023-06-07',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md10',1,'']]],
+  ['3_202_202021_2010_2007_3',['[0.3.2] - 2021-10-07',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md18',1,'']]],
+  ['3_202020_2008_2020_4',['[0.2.3] - 2020-08-20',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md26',1,'']]],
+  ['3_203_202021_2010_2017_5',['[0.3.3] - 2021-10-17',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md17',1,'']]],
+  ['3_204_202021_2012_2011_6',['[0.3.4] - 2021-12-11',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md16',1,'']]],
+  ['3_205_202022_2001_2021_7',['[0.3.5] - 2022-01-21',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md15',1,'']]],
+  ['3_206_202022_2003_2010_8',['[0.3.6] - 2022-03-10',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md14',1,'']]],
+  ['3_207_202022_2006_2021_9',['[0.3.7] - 2022-06-21',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md13',1,'']]],
+  ['3_208_202022_2010_2017_10',['[0.3.8] - 2022-10-17',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md12',1,'']]],
+  ['3_209_202023_2001_2021_11',['[0.3.9] - 2023-01-21',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md11',1,'']]],
+  ['31_12',['[0.1.0] - 2017-07-31',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md31',1,'']]]
 ];

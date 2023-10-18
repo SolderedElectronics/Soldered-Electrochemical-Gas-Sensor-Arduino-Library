@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modecn_0',['modecn',['../structsensor_type.html#a51493d470b68144264692870c25df5f0',1,'sensorType']]]
+  ['lmp_0',['lmp',['../class_electrochemical_gas_sensor.html#a49e28652c0718d293d255e6471e410b3',1,'ElectrochemicalGasSensor']]]
 ];

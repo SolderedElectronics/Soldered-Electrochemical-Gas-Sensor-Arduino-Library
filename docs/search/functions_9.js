@@ -10,5 +10,6 @@ var searchData=
   ['setgain_7',['setGain',['../class_a_d_s1_x15.html#a5ed082ffa5d6c02707ef3ee2c008caa1',1,'ADS1X15']]],
   ['setmode_8',['setMode',['../class_a_d_s1_x15.html#a0e12598eaebf2222534f12aafad4435e',1,'ADS1X15']]],
   ['setwireclock_9',['setWireClock',['../class_a_d_s1_x15.html#a7803d96900f984e54acc12cfced0787d',1,'ADS1X15']]],
-  ['status_10',['status',['../class_l_m_p91000.html#adae2d75643a99d839a77de0917669218',1,'LMP91000']]]
+  ['setzerovoltage_10',['setZeroVoltage',['../class_electrochemical_gas_sensor.html#a1fae6b84d2946839c9481450af81eb86',1,'ElectrochemicalGasSensor']]],
+  ['status_11',['status',['../class_l_m_p91000.html#adae2d75643a99d839a77de0917669218',1,'LMP91000']]]
 ];

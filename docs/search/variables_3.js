@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lmp_0',['lmp',['../class_electrochemical_gas_sensor.html#a49e28652c0718d293d255e6471e410b3',1,'ElectrochemicalGasSensor']]]
+  ['internalzeropercent_0',['internalZeroPercent',['../structsensor_type.html#a5800e7d62b63734ff4729a2942cb6fdb',1,'sensorType']]]
 ];

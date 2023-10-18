@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['lmp_0',['lmp',['../class_electrochemical_gas_sensor.html#a49e28652c0718d293d255e6471e410b3',1,'ElectrochemicalGasSensor']]],
-  ['lmp91000_1',['LMP91000',['../class_l_m_p91000.html',1,'LMP91000'],['../class_l_m_p91000.html#a37ec0101e56bf24be41035f4b05cecb1',1,'LMP91000::LMP91000()']]],
-  ['lmp91000_2ecpp_2',['LMP91000.cpp',['../_l_m_p91000_8cpp.html',1,'']]],
-  ['lmp91000_2eh_3',['LMP91000.h',['../_l_m_p91000_8h.html',1,'']]],
-  ['lock_4',['lock',['../class_l_m_p91000.html#a70f9f65236730a94f53da9671fcd6325',1,'LMP91000']]]
+  ['7_202020_2009_2027_0',['0.2.7  - 2020-09-27',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md22',1,'']]],
+  ['7_202022_2006_2021_1',['[0.3.7] - 2022-06-21',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md13',1,'']]]
 ];

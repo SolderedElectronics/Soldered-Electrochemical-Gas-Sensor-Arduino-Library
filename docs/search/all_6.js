@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['isbusy_0',['isBusy',['../class_a_d_s1_x15.html#ad00461e514ba0ed69ae732401549aff2',1,'ADS1X15']]],
-  ['isconnected_1',['isConnected',['../class_a_d_s1_x15.html#acdb83d3e8cd77860eb7cb68abf3b5b24',1,'ADS1X15']]],
-  ['isready_2',['isReady',['../class_a_d_s1_x15.html#af83192e4c892aaa2341d92ee1a754c26',1,'ADS1X15']]]
+  ['6_202020_2009_2001_0',['[0.2.6] - 2020-09-01',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md23',1,'']]],
+  ['6_202022_2003_2010_1',['[0.3.6] - 2022-03-10',['../md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md14',1,'']]]
 ];
