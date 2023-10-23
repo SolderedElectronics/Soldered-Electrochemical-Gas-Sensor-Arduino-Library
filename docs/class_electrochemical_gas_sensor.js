@@ -1,6 +1,6 @@
 var class_electrochemical_gas_sensor =
 [
-    [ "ElectrochemicalGasSensor", "class_electrochemical_gas_sensor.html#a6be87e9fe2324b46c277af2f9eadce3b", null ],
+    [ "ElectrochemicalGasSensor", "class_electrochemical_gas_sensor.html#ad7f52a7912648bbc4d87c593c1faf044", null ],
     [ "begin", "class_electrochemical_gas_sensor.html#a6808282d4d9e0a45c85c7a08e34650a9", null ],
     [ "configureLMP", "class_electrochemical_gas_sensor.html#adb4e36af5469765f8b11f834211dc920", null ],
     [ "getAveragedPPB", "class_electrochemical_gas_sensor.html#a85e812ea2055a4a606734b97d1a1170e", null ],
@@ -13,7 +13,7 @@ var class_electrochemical_gas_sensor =
     [ "setCustomTiaGain", "class_electrochemical_gas_sensor.html#a266f95dd46adb3c7953f1a99e8251606", null ],
     [ "adcAddr", "class_electrochemical_gas_sensor.html#addc289cace70c3fdbbdad7787e316a48", null ],
     [ "ads", "class_electrochemical_gas_sensor.html#aa91d3c1713d2445c26dbabe444222ed6", null ],
-    [ "configPin", "class_electrochemical_gas_sensor.html#a033190237a42a5573b34b91461ec35ca", null ],
+    [ "configPin", "class_electrochemical_gas_sensor.html#a7b04e914e1c78e72b2db19c31d0aaf70", null ],
     [ "internalZeroPercent", "class_electrochemical_gas_sensor.html#a53098c809cff264a2414dab4f790c906", null ],
     [ "lmp", "class_electrochemical_gas_sensor.html#a49e28652c0718d293d255e6471e410b3", null ],
     [ "tiaGainInKOHms", "class_electrochemical_gas_sensor.html#ac59df5b15598473628f827a8b9a4707e", null ],

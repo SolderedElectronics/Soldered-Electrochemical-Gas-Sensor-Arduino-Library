@@ -6,7 +6,7 @@ var searchData=
   ['comparator_3',['Comparator',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md46',1,'']]],
   ['comparator_20mode_4',['comparator mode',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md47',1,'Comparator Mode'],['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md51',1,'Threshold registers comparator mode']]],
   ['compatibility_5',['Board compatibility',['../index.html#autotoc_md4',1,'']]],
-  ['configpin_6',['configPin',['../class_electrochemical_gas_sensor.html#a033190237a42a5573b34b91461ec35ca',1,'ElectrochemicalGasSensor']]],
+  ['configpin_6',['configPin',['../class_electrochemical_gas_sensor.html#a7b04e914e1c78e72b2db19c31d0aaf70',1,'ElectrochemicalGasSensor']]],
   ['configure_7',['configure',['../class_l_m_p91000.html#ad80859ef81c75345c11f552d573b5323',1,'LMP91000']]],
   ['configurelmp_8',['configureLMP',['../class_electrochemical_gas_sensor.html#adb4e36af5469765f8b11f834211dc920',1,'ElectrochemicalGasSensor']]],
   ['contents_9',['Repository Contents',['../index.html#autotoc_md1',1,'']]],
