@@ -24,7 +24,7 @@
 class ElectrochemicalGasSensor
 {
   public:
-    ElectrochemicalGasSensor(sensorType _t, uint8_t _adcAddr = DEFAULT_ADC_ADDR, uint8_t _configPin = -1);
+    ElectrochemicalGasSensor(sensorType _t, uint8_t _adcAddr = DEFAULT_ADC_ADDR, int _configPin = -1);
     bool begin();
     bool configureLMP();
     double getVoltage();
@@ -38,7 +38,7 @@ class ElectrochemicalGasSensor
     LMP91000 *lmp;
     ADS1015 *ads;
     uint8_t adcAddr;
-    uint8_t configPin;
+    int configPin;
     sensorType type;
     float tiaGainInKOHms;
     float internalZeroPercent;
