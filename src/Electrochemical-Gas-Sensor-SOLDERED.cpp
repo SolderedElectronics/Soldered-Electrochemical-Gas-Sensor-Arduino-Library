@@ -292,5 +292,8 @@ float ElectrochemicalGasSensor::getInternalZeroPercent()
         // This is not implemented, just the standard internal zero mode
         return -1;
         break;
+    default:
+        return -1;
+        break;
     }
 }
