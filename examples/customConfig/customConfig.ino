@@ -27,8 +27,8 @@
 // and the LMP91000 datasheet, chapter 7.6
 // Here is an example of a custom configuration:
 const sensorType SENSOR_CUSTOM = {
-    70.0F,                    // nanoAmperesPerPPM
-    -0.015,                   // internalZeroCalibration
+    100.0F,                   // nanoAmperesPerPPM
+    0,                        // internalZeroCalibration
     ADS_GAIN_4_096V,          // adsGain
     TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,             // RLOAD
@@ -63,14 +63,18 @@ void loop()
 {
     // Make the reading
     double reading = sensor.getPPM();
-
-    // If PPB is more relevant for your sensor, you can use:
-    // double reading = sensor.getPPB();
+    
+    // If you're working with a different type of sensor, you will likely want to know the voltage to fine-tune the sensor
+    double voltage = sensor.getVoltage();
+    // In an environment with no target gas, this should be really close to REF_VOLTAGE * internalZeroPercent
+    // Use internalZeroCalibration to fine tune it to that
 
     // Print the reading with 5 digits of precision
-    Serial.print("Sensor reading:");
+    Serial.println("Sensor reading:");
     Serial.print(reading, 5);
     Serial.println(" PPM");
+    Serial.print(voltage, 5); // Also print the voltage
+    Serial.println(" V");
 
     // Wait a bit before reading again
     delay(2500);
