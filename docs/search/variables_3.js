@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['internalzeropercent_0',['internalZeroPercent',['../structsensor_type.html#a5800e7d62b63734ff4729a2942cb6fdb',1,'sensorType']]]
+  ['configpin_0',['configPin',['../class_electrochemical_gas_sensor.html#a033190237a42a5573b34b91461ec35ca',1,'ElectrochemicalGasSensor']]]
 ];

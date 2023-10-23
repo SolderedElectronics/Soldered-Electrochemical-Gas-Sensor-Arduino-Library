@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('sensor_config_data_8h.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains all the configurations for the different electrochemical sensors.  
+<p>This file contains all the configurations for the sensors.  
 <a href="#details">More...</a></p>
 
 <p><a href="sensor_config_data_8h_source.html">Go to the source code of this file.</a></p>
@@ -116,9 +116,11 @@ Variables</h2></td></tr>
 <tr class="separator:a7d2fa02042d642b5d413397fcd3ae6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8f664c8ebc27c25e143057fdfadb5c6" id="r_ad8f664c8ebc27c25e143057fdfadb5c6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsensor_type.html">sensorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sensor_config_data_8h.html#ad8f664c8ebc27c25e143057fdfadb5c6">SENSOR_NO2</a></td></tr>
 <tr class="separator:ad8f664c8ebc27c25e143057fdfadb5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e9b5103152c9bd15a6bf701edccd28" id="r_a42e9b5103152c9bd15a6bf701edccd28"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsensor_type.html">sensorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sensor_config_data_8h.html#a42e9b5103152c9bd15a6bf701edccd28">SENSOR_SO2</a></td></tr>
+<tr class="separator:a42e9b5103152c9bd15a6bf701edccd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains all the configurations for the different electrochemical sensors. </p>
+<div class="textblock"><p>This file contains all the configurations for the sensors. </p>
 <dl class="section copyright"><dt>Copyright</dt><dd>GNU General Public License v3.0 </dd></dl>
 <dl class="section author"><dt>Authors</dt><dd>Robert @ soldered.com </dd></dl>
 </div><h2 class="groupheader">Variable Documentation</h2>
@@ -134,13 +136,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0b00011100, </div>
-<div class="line">    0b10000000, </div>
-<div class="line">    0x03,       </div>
-<div class="line">    70.0F,      </div>
-<div class="line">    350.0,      </div>
-<div class="line">    20,         </div>
-<div class="line">    1           </div>
+<div class="line">    70.0F,                    </div>
+<div class="line">    0.078,                    </div>
+<div class="line">    ADS_GAIN_4_096V,          </div>
+<div class="line">    TIA_GAIN_350_KOHM,        </div>
+<div class="line">    RLOAD_10_OHM,             </div>
+<div class="line">    REF_EXTERNAL,             </div>
+<div class="line">    INTERNAL_ZERO_20_PERCENT, </div>
+<div class="line">    BIAS_SIGN_NEGATIVE,       </div>
+<div class="line">    BIAS_0_PERCENT,           </div>
+<div class="line">    FET_SHORT_DISABLED,       </div>
+<div class="line">    OP_MODE_3LEAD_AMP_CELL,   </div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -157,13 +163,44 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0b00011011, </div>
-<div class="line">    0b11000000, </div>
-<div class="line">    0x03,       </div>
-<div class="line">    -600.0F,    </div>
-<div class="line">    120.0F,     </div>
-<div class="line">    67,         </div>
-<div class="line">    2,          </div>
+<div class="line">    -600.0F,                  </div>
+<div class="line">    -0.015,                   </div>
+<div class="line">    ADS_GAIN_2_048V,          </div>
+<div class="line">    TIA_GAIN_350_KOHM,        </div>
+<div class="line">    RLOAD_10_OHM,             </div>
+<div class="line">    REF_EXTERNAL,             </div>
+<div class="line">    INTERNAL_ZERO_67_PERCENT, </div>
+<div class="line">    BIAS_SIGN_NEGATIVE,       </div>
+<div class="line">    BIAS_0_PERCENT,           </div>
+<div class="line">    FET_SHORT_DISABLED,       </div>
+<div class="line">    OP_MODE_3LEAD_AMP_CELL,   </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a42e9b5103152c9bd15a6bf701edccd28" name="a42e9b5103152c9bd15a6bf701edccd28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e9b5103152c9bd15a6bf701edccd28">&#9670;&#160;</a></span>SENSOR_SO2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structsensor_type.html">sensorType</a> SENSOR_SO2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    400.0F,                   </div>
+<div class="line">    0.075,                    </div>
+<div class="line">    ADS_GAIN_2_048V,          </div>
+<div class="line">    TIA_GAIN_350_KOHM,        </div>
+<div class="line">    RLOAD_10_OHM,             </div>
+<div class="line">    REF_EXTERNAL,             </div>
+<div class="line">    INTERNAL_ZERO_20_PERCENT, </div>
+<div class="line">    BIAS_SIGN_NEGATIVE,       </div>
+<div class="line">    BIAS_0_PERCENT,           </div>
+<div class="line">    FET_SHORT_DISABLED,       </div>
+<div class="line">    OP_MODE_3LEAD_AMP_CELL,   </div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -176,7 +213,7 @@ Variables</h2></td></tr>
     <ul>
         <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="sensor_config_data_8h.html">sensorConfigData.h</a></li>
         <li class="footer">
-            Generated on Wed Oct 18 2023 12:30:02 for Electrochemical Gas Sensor Library by <a href="http://www.doxygen.org/index.html">
+            Generated on Mon Oct 23 2023 13:30:56 for Electrochemical Gas Sensor Library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.8.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.

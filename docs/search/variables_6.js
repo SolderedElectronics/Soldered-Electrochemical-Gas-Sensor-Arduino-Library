@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nanoamperesperppm_0',['nanoAmperesPerPPM',['../structsensor_type.html#a75054db014ac0cf59ba32de94f5146e0',1,'sensorType']]]
+  ['lmp_0',['lmp',['../class_electrochemical_gas_sensor.html#a49e28652c0718d293d255e6471e410b3',1,'ElectrochemicalGasSensor']]]
 ];

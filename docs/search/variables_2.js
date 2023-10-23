@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['calibrationvoltage_0',['calibrationVoltage',['../class_electrochemical_gas_sensor.html#af9d438cf556c8a14eb6e371764274a1f',1,'ElectrochemicalGasSensor']]],
-  ['configpin_1',['configPin',['../class_electrochemical_gas_sensor.html#a033190237a42a5573b34b91461ec35ca',1,'ElectrochemicalGasSensor']]]
+  ['bias_0',['BIAS',['../structsensor_type.html#ae383f5b9550ae5e8d1c2a49c818d7e42',1,'sensorType']]],
+  ['bias_5fsign_1',['BIAS_SIGN',['../structsensor_type.html#a2737b36e5f8907b4adb484c4f9886733',1,'sensorType']]]
 ];

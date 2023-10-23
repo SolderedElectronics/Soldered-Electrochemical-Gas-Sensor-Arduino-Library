@@ -12,6 +12,6 @@ var searchData=
   ['ads1x15_9',['ads1x15',['../class_a_d_s1_x15.html',1,'ADS1X15'],['../class_a_d_s1_x15.html#a688613f7024848088adbbbee70b23173',1,'ADS1X15::ADS1X15()'],['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md34',1,'ADS1X15']]],
   ['ads1x15_2ecpp_10',['ADS1X15.cpp',['../_a_d_s1_x15_8cpp.html',1,'']]],
   ['ads1x15_2eh_11',['ADS1X15.h',['../_a_d_s1_x15_8h.html',1,'']]],
-  ['adsgain_12',['ADSGain',['../structsensor_type.html#ac5279e2c8683224d73c16db44b4f54f6',1,'sensorType']]],
+  ['adsgain_12',['adsGain',['../structsensor_type.html#a1823ae706ebc82d1ce6930601c80b1e9',1,'sensorType']]],
   ['arduino_20library_13',['Electrochemical Gas Sensor Breakout Arduino library',['../index.html',1,'']]]
 ];

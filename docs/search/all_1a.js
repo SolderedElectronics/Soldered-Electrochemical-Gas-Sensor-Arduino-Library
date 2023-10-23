@@ -13,16 +13,17 @@ var searchData=
   ['readadc_5fdifferential_5f1_5f3_10',['readadc_differential_1_3',['../class_a_d_s1015.html#aa5e153b0f1aed7e5080576595787e027',1,'ADS1015::readADC_Differential_1_3()'],['../class_a_d_s1115.html#acebed15a57a061227c7401d162c6e2fe',1,'ADS1115::readADC_Differential_1_3()']]],
   ['readadc_5fdifferential_5f2_5f3_11',['readadc_differential_2_3',['../class_a_d_s1015.html#a4eaa89f065b4459bd263d8dc46b7205a',1,'ADS1015::readADC_Differential_2_3()'],['../class_a_d_s1115.html#a074323a5f4f75a3a63d0e4104cce1a19',1,'ADS1115::readADC_Differential_2_3()']]],
   ['readme_2emd_12',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['refcn_13',['refcn',['../structsensor_type.html#a23edb4d4a061dee3bb00de9c6c51ebad',1,'sensorType']]],
+  ['ref_5fsource_13',['REF_SOURCE',['../structsensor_type.html#a816eb5c2a631d919a26c22d0c9b17b66',1,'sensorType']]],
   ['registers_14',['Threshold registers',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md45',1,'']]],
   ['registers_20comparator_20mode_15',['Threshold registers comparator mode',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md51',1,'']]],
   ['repository_20contents_16',['Repository Contents',['../index.html#autotoc_md1',1,'']]],
   ['requestadc_17',['requestADC',['../class_a_d_s1_x15.html#af6420d8e92a1fdbbe726068bf989736b',1,'ADS1X15']]],
   ['requestadc_5fdifferential_5f0_5f1_18',['requestADC_Differential_0_1',['../class_a_d_s1_x15.html#a2d60926af828cbc81258e06534517ae1',1,'ADS1X15']]],
-  ['requestadc_5fdifferential_5f0_5f3_19',['requestadc_differential_0_3',['../class_a_d_s1115.html#ac58f984d296f059acc854377880b890f',1,'ADS1115::requestADC_Differential_0_3()'],['../class_a_d_s1015.html#a860150245596dfa7a8ad3c9b482139bd',1,'ADS1015::requestADC_Differential_0_3()']]],
+  ['requestadc_5fdifferential_5f0_5f3_19',['requestadc_differential_0_3',['../class_a_d_s1015.html#a860150245596dfa7a8ad3c9b482139bd',1,'ADS1015::requestADC_Differential_0_3()'],['../class_a_d_s1115.html#ac58f984d296f059acc854377880b890f',1,'ADS1115::requestADC_Differential_0_3()']]],
   ['requestadc_5fdifferential_5f1_5f3_20',['requestadc_differential_1_3',['../class_a_d_s1115.html#a5b884403334d0507a561cef10083b770',1,'ADS1115::requestADC_Differential_1_3()'],['../class_a_d_s1015.html#a2fa325da03407c1a1031920c909a0c14',1,'ADS1015::requestADC_Differential_1_3()']]],
   ['requestadc_5fdifferential_5f2_5f3_21',['requestadc_differential_2_3',['../class_a_d_s1115.html#a046b481ef423bae1bcb4ac518c5abbe9',1,'ADS1115::requestADC_Differential_2_3()'],['../class_a_d_s1015.html#ae555cb0dad0cb569cfc887ba1895dbc3',1,'ADS1015::requestADC_Differential_2_3()']]],
   ['requested_22',['Wont (unless requested)',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md57',1,'']]],
   ['reset_23',['reset',['../class_a_d_s1_x15.html#a03c5e75c603fa4872b810add8b2d5c75',1,'ADS1X15']]],
-  ['rp2040_20specific_24',['RP2040 specific',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md52',1,'']]]
+  ['rload_24',['RLOAD',['../structsensor_type.html#a00163e0bfa4a9fe9c0feb710723c4def',1,'sensorType']]],
+  ['rp2040_20specific_25',['RP2040 specific',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md52',1,'']]]
 ];
