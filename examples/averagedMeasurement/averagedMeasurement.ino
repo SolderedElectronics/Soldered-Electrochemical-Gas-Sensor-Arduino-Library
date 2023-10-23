@@ -1,14 +1,12 @@
 /**
  **************************************************
  *
- * @file        customConfig.ino
- * @brief       Create a custom config for the LMP91000 and upload it to the device.
- *              This enables you to use this breakout with any electrochemical sensor.
+ * @file        averagedMeasurement.ino
+ * @brief       See how to use a built-in function to make an averaged measurement
  *
  *              To successfully run the sketch:
- *              - Edit the custom configuration
- *              - Connect LMPEN to any GPIO pin
  *              - Connect the breakout to your Dasduino board via easyC
+ *              - Connect LMPEN pin to GND or a GPIO pin so the breakout can be configured
  *              - Run the sketch and open serial monitor at 115200 baud!
  *
  *              Electrochemical Gas Sensor Breakout: solde.red/333218
@@ -22,26 +20,17 @@
 // Include the required library
 #include "Electrochemical-Gas-Sensor-SOLDERED.h"
 
-// For details on how to configure the LMP for any sensor, check sensorConfigData.h
-// It has #defines for all available values
-// and the LMP91000 datasheet, chapter 7.6
-// Here is an example of a custom configuration:
-const sensorType SENSOR_CUSTOM = {
-    70.0F,                    // nanoAmperesPerPPM
-    -0.015,                   // internalZeroCalibration
-    ADS_GAIN_4_096V,          // adsGain
-    TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
-    RLOAD_10_OHM,             // RLOAD
-    REF_EXTERNAL,             // REF_SOURCE
-    INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
-    BIAS_SIGN_NEGATIVE,       // BIAS_SIGN
-    BIAS_0_PERCENT,           // BIAS
-    FET_SHORT_DISABLED,       // FET_SHORT
-    OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
-};
+// How many readings to average from and how long to wait between them
+#define NUM_READINGS 5
+#define SECS_BETWEEN_READINGS 3
 
-// Create the sensor object with the custom type
-ElectrochemicalGasSensor sensor(SENSOR_CUSTOM);
+// Configurations for each of the sensor types are in sensorConfigData.h in the library's 'src' folder
+// Create the sensor object with the according type
+ElectrochemicalGasSensor sensor(SENSOR_CO);
+
+// If you are using a custom I2C address (for multiple sensors) use:
+// ElectrochemicalGasSensor sensor(SENSOR_CO, 0x4A, 25);
+// For more details on this, see customAddress.ino
 
 void setup()
 {
@@ -61,11 +50,12 @@ void setup()
 
 void loop()
 {
-    // Make the reading
-    double reading = sensor.getPPM();
+    // Make the averaged reading
+    // This is a blocking function, so it will take a while before code continues
+    double reading = sensor.getAveragedPPM(NUM_READINGS, SECS_BETWEEN_READINGS);
 
     // If PPB is more relevant for your sensor, you can use:
-    // double reading = sensor.getPPB();
+    // double reading = sensor.getAveragedPPB(NUM_READINGS, SECS_BETWEEN_READINGS);
 
     // Print the reading with 5 digits of precision
     Serial.print("Sensor reading:");
