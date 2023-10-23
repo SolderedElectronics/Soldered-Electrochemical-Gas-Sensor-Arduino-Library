@@ -2,12 +2,12 @@
  **************************************************
  *
  * @file        twoSensors.ino
- * @brief       How to configure and read from two different electrochemical sensors
- *              connected to one Dasduino.
+ * @brief       See how to init two sensors and make two  readings of PPM of gas.
  *
  *              To successfully run the sketch:
- *              - Connect LMPEN pins of the breakouts to pins set below
+ *              - Set different addresses using the jumpers on the back of the breakout
  *              - Connect the breakouts to your Dasduino board via easyC
+ *              - Connect LMPEN pins to a GPIO pin so the breakouts can be configured
  *              - Run the sketch and open serial monitor at 115200 baud!
  *
  *              Electrochemical Gas Sensor Breakout: solde.red/333218
@@ -21,85 +21,56 @@
 // Include the required library
 #include "Electrochemical-Gas-Sensor-SOLDERED.h"
 
-// Set pins which connect to LMPEN on the breakouts
-// To enable configuring the LMP91000 analog frontends, these have to be pulled LOW
-// The library does this for you, just set the pins!
-#define LMPEN1_PIN 7
-#define LMPEN2_PIN 8
-
-// Create the sensor object with the according types, addresses and pins
-// See how to set the custom addresses in customAddress.ino
-ElectrochemicalGasSensor sensorNO(SENSOR_NO, 0x49, LMPEN1_PIN);
-ElectrochemicalGasSensor sensorCO(SENSOR_CO, 0x4A, LMPEN2_PIN);
+// Create two different sensor objects
+ElectrochemicalGasSensor sensorCO(SENSOR_CO, 0x4A, 25);
+ElectrochemicalGasSensor sensorNO2(SENSOR_NO2, 0x49, 32);
+// To see how the custom addresses are determined, check customAddress.ino
 
 void setup()
 {
     Serial.begin(115200); // For debugging
 
-    // Init sensorNO
-    if (!sensorNO.begin())
-    {
-        // Can't init? Notify the user and go to infinite loop
-        Serial.println("ERROR: Can't init NO sensor! Check connections!");
-        while (true)
-        {
-            delay(100);
-        }
-    }
-    Serial.println("NO sensor initialized successfully!");
-
-    // Configure LMP91000 for sensorNO
-    if (!sensorNO.configureLMP())
-    {
-        // Error? Notify the user and go to infinite loop
-        Serial.println("ERROR: Can't configure LMP91000 for NO sensor!");
-        while (true)
-        {
-            delay(100);
-        }
-    }
-    Serial.println("NO sensor configured successfully!");
-
-    // Init SENSOR_CO
+    // Init breakout #1
     if (!sensorCO.begin())
     {
         // Can't init? Notify the user and go to infinite loop
-        Serial.println("ERROR: Can't init CO sensor! Check connections!");
+        Serial.println("ERROR: Can't init the sensor! Check connections!");
         while (true)
-        {
             delay(100);
-        }
     }
+
     Serial.println("CO sensor initialized successfully!");
 
-    // Configure LMP91000 for SENSOR_CO
-    if (!sensorCO.configureLMP())
+    // Init breakout #2
+    if (!sensorNO2.begin())
     {
-        // Error? Notify the user and go to infinite loop
-        Serial.println("ERROR: Can't configure LMP91000 for CO sensor!");
+        // Can't init? Notify the user and go to infinite loop
+        Serial.println("ERROR: Can't init the sensor! Check connections!");
         while (true)
-        {
             delay(100);
-        }
     }
-    Serial.println("CO sensor configured successfully!");
+
+    Serial.println("NO2 sensor initialized successfully!");
 }
 
 void loop()
 {
-    // Make the readings
-    double readingNO = sensorNO.getPPM();
-    double readingCO = sensorCO.getPPM();
-    
-    // Print the readings with 10 digits of precision
-    Serial.print("NO sensor reading: ");
-    Serial.print(readingNO, 10);
-    Serial.println("ppm");
+    // Make the reading of CO and print it
+    double COreading = sensorCO.getPPM();
 
-    Serial.print("CO sensor reading: ");
-    Serial.print(readingCO, 10);
-    Serial.println("ppm");
-    
+    // Print the reading with 5 digits of precision
+    Serial.print("CO sensor reading:");
+    Serial.print(COreading, 5);
+    Serial.println(" PPM");
+
+    // Make the reading of NO2 and print it
+    double NO2reading = sensorNO2.getPPB();
+
+    // Print the reading with 5 digits of precision
+    Serial.print("NO2 sensor reading:");
+    Serial.print(NO2reading, 5);
+    Serial.println(" PPB");
+
     // Wait a bit before reading again
-    delay(5000);
+    delay(2500);
 }

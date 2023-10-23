@@ -2,12 +2,12 @@
  **************************************************
  *
  * @file        customAddress.ino
- * @brief       See how using different I2C addresses works for the Electrochemical Gas Sensor Breakout.
- *              This allows you to connect multiple Electrochemical Gas Sensor Breakouts with one Dasduino!
+ * @brief       See how to init a sensor on a custom address
  *
  *              To successfully run the sketch:
- *              - Set your breakout's address with the jumpers on the board (info below)
- *              - Connect the breakout(s) to your Dasduino board via easyC
+ *              - Set the custom address using the jumpers on the back of the board
+ *              - Connect the breakout to your Dasduino board via easyC
+ *              - Connect LMPEN pin to GND or a GPIO pin so the breakout can be configured
  *              - Run the sketch and open serial monitor at 115200 baud!
  *
  *              Electrochemical Gas Sensor Breakout: solde.red/333218
@@ -21,36 +21,27 @@
 // Include the required library
 #include "Electrochemical-Gas-Sensor-SOLDERED.h"
 
-/**
- * The board has three jumpers which determine the address:
- * 
- * JP5 is connected by default, it makes the address 0x49. It has to be connected because
- * both the LMP91000 and ADS1015 have the default address 0x48.
- * 
- * Disconnecting JP5 and connecting JP6 makes the address 0x4A.
- * 
- * Disconnecting JP5 and connecting JP7 makes the address 0x4B.
- * 
-*/
-
-// If you are using a custom I2C address, create the object like this:
-ElectrochemicalGasSensor sensor(SENSOR_SO2, 0x4A);
-
+// Create the sensor object with the according type
+// To set a custom address, connect one of the following jumpers:
+// JP5 for 0x49
+// JP6 for 0x4A
+// JP7 for 0x4B
+// The final parameter is the GPIO pin for LMPEN
+ElectrochemicalGasSensor sensor(SENSOR_SO2, 0x4B, 5);
 
 void setup()
 {
     Serial.begin(115200); // For debugging
 
-    // Init the sensor
+    // Init the breakout
     if (!sensor.begin())
     {
         // Can't init? Notify the user and go to infinite loop
         Serial.println("ERROR: Can't init the sensor! Check connections!");
         while (true)
-        {
             delay(100);
-        }
     }
+
     Serial.println("Sensor initialized successfully!");
 }
 
@@ -58,12 +49,15 @@ void loop()
 {
     // Make the reading
     double reading = sensor.getPPM();
-    
-    // Print the reading with 10 digits of precision
-    Serial.print("Sensor reading: ");
-    Serial.print(reading, 10);
-    Serial.println("ppm");
-    
+
+    // If PPB is more relevant for your sensor, you can use:
+    // double reading = sensor.getPPB();
+
+    // Print the reading with 5 digits of precision
+    Serial.print("Sensor reading:");
+    Serial.print(reading, 5);
+    Serial.println(" PPM");
+
     // Wait a bit before reading again
-    delay(5000);
+    delay(2500);
 }

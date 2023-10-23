@@ -19,6 +19,7 @@
 
 #define DEFAULT_LMP_ADDR 0x48
 #define DEFAULT_ADC_ADDR 0x49
+#define REF_VOLTAGE 2.5F
 
 class ElectrochemicalGasSensor
 {
@@ -26,14 +27,23 @@ class ElectrochemicalGasSensor
     ElectrochemicalGasSensor(sensorType _t, uint8_t _adcAddr = DEFAULT_ADC_ADDR, uint8_t _configPin = -1);
     bool begin();
     bool configureLMP();
+    double getVoltage();
     double getPPM();
+    double getPPB();
+    double getAveragedPPM(uint8_t _numMeasurements = 5, uint8_t _secondsDelay = 2);
+    double getAveragedPPB(uint8_t _numMeasurements = 5, uint8_t _secondsDelay = 2);
+    void setCustomTiaGain(float _tiaGain);
 
   private:
     LMP91000 *lmp;
     ADS1015 *ads;
     uint8_t adcAddr;
-    sensorType type;
     uint8_t configPin;
+    sensorType type;
+    float tiaGainInKOHms;
+    float internalZeroPercent;
+    float getTiaGain();
+    float getInternalZeroPercent();
 };
 
 #endif
