@@ -19,7 +19,7 @@
 
 #define DEFAULT_LMP_ADDR 0x48
 #define DEFAULT_ADC_ADDR 0x49
-#define REF_VOLTAGE 2.5F
+#define REF_VOLTAGE      2.5F
 
 class ElectrochemicalGasSensor
 {
