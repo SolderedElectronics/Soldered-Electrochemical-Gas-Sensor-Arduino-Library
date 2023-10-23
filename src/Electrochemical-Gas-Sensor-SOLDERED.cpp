@@ -250,6 +250,9 @@ float ElectrochemicalGasSensor::getTiaGain()
     case TIA_GAIN_350_KOHM:
         return 350000.00F;
         break;
+    default:
+        return -1;
+        break;
     }
 }
 
