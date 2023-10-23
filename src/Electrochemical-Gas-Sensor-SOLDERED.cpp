@@ -19,7 +19,7 @@
  * @param uint8_t _adcAddr  The custom address of the ADC
  *
  */
-ElectrochemicalGasSensor::ElectrochemicalGasSensor(sensorType _t, uint8_t _adcAddr, uint8_t _configPin)
+ElectrochemicalGasSensor::ElectrochemicalGasSensor(sensorType _t, uint8_t _adcAddr, int _configPin)
 {
     adcAddr = _adcAddr;
     type = _t;
