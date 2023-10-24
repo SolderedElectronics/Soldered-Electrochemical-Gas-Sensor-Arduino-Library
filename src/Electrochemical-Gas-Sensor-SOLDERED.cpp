@@ -134,31 +134,31 @@ double ElectrochemicalGasSensor::getPPM()
     // Get the voltage from the ADS
     double voltage = getVoltage();
 
-    #ifdef ELECTROCHEMICAL_SENSOR_DEBUG
+#ifdef ELECTROCHEMICAL_SENSOR_DEBUG
     Serial.println();
     Serial.println("Electrochemical gas sensor readings:");
     Serial.print("Raw voltage measurement: ");
     Serial.print(voltage, 10);
     Serial.println(" V");
-    #endif
+#endif
 
     // Calculate current and calculate PPM based on datasheet
     double voltsNoRef = voltage - (REF_VOLTAGE * (internalZeroPercent / 100.0F));
 
-    #ifdef ELECTROCHEMICAL_SENSOR_DEBUG
+#ifdef ELECTROCHEMICAL_SENSOR_DEBUG
     Serial.print("Voltage without reference value: ");
     Serial.print(voltsNoRef, 10);
     Serial.println(" V");
-    #endif
+#endif
 
     voltsNoRef += type.internalZeroCalibration; // Add the calibration value as well
 
-    #ifdef ELECTROCHEMICAL_SENSOR_DEBUG
+#ifdef ELECTROCHEMICAL_SENSOR_DEBUG
     Serial.print("Voltage after calibration: ");
     Serial.print(voltsNoRef, 10);
     Serial.println(" V");
     Serial.println("");
-    #endif
+#endif
 
     double current = voltsNoRef / (tiaGainInKOHms * 1000);
     double ppm = current / (type.nanoAmperesPerPPM * (double)1e-9);

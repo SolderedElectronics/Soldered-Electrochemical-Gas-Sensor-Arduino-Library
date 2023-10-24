@@ -130,7 +130,7 @@ const sensorType SENSOR_NO2 = {
 // SGX-4SO2 - Sulphur Dioxide sensor
 const sensorType SENSOR_SO2 = {
     400.0F,                   // nanoAmperesPerPPM
-    0.1,                    // internalZeroCalibration
+    0.1,                      // internalZeroCalibration
     ADS_GAIN_2_048V,          // adsGain
     TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,             // RLOAD
