@@ -59,7 +59,7 @@ void loop()
     double COreading = sensorCO.getPPM();
 
     // Print the reading with 5 digits of precision
-    Serial.print("CO sensor reading:");
+    Serial.print("CO sensor reading: ");
     Serial.print(COreading, 5);
     Serial.println(" PPM");
 
@@ -67,7 +67,7 @@ void loop()
     double NO2reading = sensorNO2.getPPB();
 
     // Print the reading with 5 digits of precision
-    Serial.print("NO2 sensor reading:");
+    Serial.print("NO2 sensor reading: ");
     Serial.print(NO2reading, 5);
     Serial.println(" PPB");
 

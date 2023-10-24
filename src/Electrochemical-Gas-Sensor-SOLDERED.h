@@ -12,6 +12,10 @@
 #ifndef __ELECTROCHEMICAL_GAS_SENSOR_SOLDERED__
 #define __ELECTROCHEMICAL_GAS_SENSOR_SOLDERED__
 
+// This define will cause debug messages to print in our library
+// Useful when calibrating the sensor
+// #define ELECTROCHEMICAL_SENSOR_DEBUG
+
 #include "Arduino.h"
 #include "libs/ADS1X15/ADS1X15.h"
 #include "libs/LMP91000/LMP91000.h"

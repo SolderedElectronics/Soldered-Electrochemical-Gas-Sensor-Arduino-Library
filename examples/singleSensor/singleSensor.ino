@@ -53,7 +53,7 @@ void loop()
     // double reading = sensor.getPPB();
 
     // Print the reading with 5 digits of precision
-    Serial.print("Sensor reading:");
+    Serial.print("Sensor reading: ");
     Serial.print(reading, 5);
     Serial.println(" PPM");
 
