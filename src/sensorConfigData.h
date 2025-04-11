@@ -142,4 +142,65 @@ const sensorType SENSOR_SO2 = {
     OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
 };
 
+// SGX-403-20 - Ozone sensor
+const sensorType SENSOR_O3 = {
+    -1000.0F,                  // nanoAmperesPerPPM
+    -0.5,                      // internalZeroCalibration
+    ADS_GAIN_0_512V,          // adsGain
+    TIA_GAIN_35_KOHM,        // TIA_GAIN_IN_KOHMS
+    RLOAD_10_OHM,            // RLOAD
+    REF_EXTERNAL,             // REF_SOURCE
+    INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
+    BIAS_SIGN_POSITIVE,       // BIAS_SIGN
+    BIAS_0_PERCENT,           // BIAS
+    FET_SHORT_DISABLED,       // FET_SHORT
+    OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
+};
+
+// SGX-4NO-250 - Nitric Oxide sensor
+const sensorType SENSOR_NO = {
+    400.0F,                  // nanoAmperesPerPPM
+    0.5,                      // internalZeroCalibration
+    ADS_GAIN_1_024V,          // adsGain
+    TIA_GAIN_35_KOHM,        // TIA_GAIN_IN_KOHMS
+    RLOAD_10_OHM,            // RLOAD
+    REF_EXTERNAL,             // REF_SOURCE
+    INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
+    BIAS_SIGN_POSITIVE,       // BIAS_SIGN
+    BIAS_12_PERCENT,           // BIAS
+    FET_SHORT_DISABLED,       // FET_SHORT
+    OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
+};
+
+// SGX-4H2S-100 - Hydrogen Sulphide sensor
+const sensorType SENSOR_H2S = {
+    1200.0F,                  // nanoAmperesPerPPM
+    0.01,                      // internalZeroCalibration
+    ADS_GAIN_2_048V,          // adsGain
+    TIA_GAIN_35_KOHM,        // TIA_GAIN_IN_KOHMS
+    RLOAD_10_OHM,            // RLOAD
+    REF_EXTERNAL,             // REF_SOURCE
+    INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
+    BIAS_SIGN_POSITIVE,       // BIAS_SIGN
+    BIAS_0_PERCENT,           // BIAS
+    FET_SHORT_DISABLED,       // FET_SHORT
+    OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
+};
+
+// SGX-4NH3-300 - Ammonia sensor
+const sensorType SENSOR_NH3 = {
+    40.0F,                  // nanoAmperesPerPPM
+    0.5,                      // internalZeroCalibration
+    ADS_GAIN_2_048V,          // adsGain
+    TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
+    RLOAD_10_OHM,            // RLOAD
+    REF_EXTERNAL,             // REF_SOURCE
+    INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
+    BIAS_SIGN_POSITIVE,       // BIAS_SIGN
+    BIAS_0_PERCENT,           // BIAS
+    FET_SHORT_DISABLED,       // FET_SHORT
+    OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
+};
+
+
 #endif

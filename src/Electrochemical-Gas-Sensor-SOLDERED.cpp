@@ -59,6 +59,7 @@ bool ElectrochemicalGasSensor::begin()
     // Now, configure the LMP analog frontend as well:
     result &= configureLMP();
 
+
     // Will return 1 if both ads->begin and configureLMP() were OK
     return result;
 }
