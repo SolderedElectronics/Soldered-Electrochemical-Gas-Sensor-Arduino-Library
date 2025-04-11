@@ -38,7 +38,7 @@ var NAVTREE =
       [ "[0.3.2] - 2021-10-07", "md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md18", null ],
       [ "[0.3.1] - 2021-04-25", "md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md19", null ],
       [ "[0.3.0] - 2021-03-29", "md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md20", [
-        [ "0.2.7  - 2020-09-27", "md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md22", null ],
+        [ "0.2.7 - 2020-09-27", "md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md22", null ],
         [ "[0.2.6] - 2020-09-01", "md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md23", null ],
         [ "[0.2.5] - 2020-08-26", "md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md24", null ],
         [ "[0.2.4] - 2020-08-26", "md_src_2libs_2_a_d_s1_x15_2_c_h_a_n_g_e_l_o_g.html#autotoc_md25", null ],
@@ -76,5 +76,5 @@ var NAVTREEINDEX =
 "_a_d_s1_x15_8cpp.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
