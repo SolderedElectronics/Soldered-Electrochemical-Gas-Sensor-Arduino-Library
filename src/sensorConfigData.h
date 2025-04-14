@@ -145,9 +145,9 @@ const sensorType SENSOR_SO2 = {
 // SGX-403-20 - Ozone sensor
 const sensorType SENSOR_O3 = {
     -1000.0F,                  // nanoAmperesPerPPM
-    -0.5,                      // internalZeroCalibration
-    ADS_GAIN_0_512V,          // adsGain
-    TIA_GAIN_35_KOHM,        // TIA_GAIN_IN_KOHMS
+    -1.65,                      // internalZeroCalibration
+    ADS_GAIN_2_048V,          // adsGain
+    TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,            // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
     INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
@@ -161,8 +161,8 @@ const sensorType SENSOR_O3 = {
 const sensorType SENSOR_NO = {
     400.0F,                  // nanoAmperesPerPPM
     0.5,                      // internalZeroCalibration
-    ADS_GAIN_1_024V,          // adsGain
-    TIA_GAIN_35_KOHM,        // TIA_GAIN_IN_KOHMS
+    ADS_GAIN_2_048V,          // adsGain
+    TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,            // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
     INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
@@ -175,9 +175,9 @@ const sensorType SENSOR_NO = {
 // SGX-4H2S-100 - Hydrogen Sulphide sensor
 const sensorType SENSOR_H2S = {
     1200.0F,                  // nanoAmperesPerPPM
-    0.01,                      // internalZeroCalibration
+    0.1,                      // internalZeroCalibration
     ADS_GAIN_2_048V,          // adsGain
-    TIA_GAIN_35_KOHM,        // TIA_GAIN_IN_KOHMS
+    TIA_GAIN_350_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,            // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
     INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
