@@ -202,5 +202,19 @@ const sensorType SENSOR_NH3 = {
     OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
 };
 
+// SGX-4CL2 - Chlorine sensor
+const sensorType SENSOR_CL2 = {
+    600.0F,                  // nanoAmperesPerPPM
+    0.5,                      // internalZeroCalibration
+    ADS_GAIN_2_048V,          // adsGain
+    TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
+    RLOAD_33_OHM,            // RLOAD
+    REF_EXTERNAL,             // REF_SOURCE
+    INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
+    BIAS_SIGN_POSITIVE,       // BIAS_SIGN
+    BIAS_0_PERCENT,           // BIAS
+    FET_SHORT_DISABLED,       // FET_SHORT
+    OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
+};
 
 #endif
