@@ -312,3 +312,14 @@ float ElectrochemicalGasSensor::getInternalZeroPercent()
         break;
     }
 }
+
+/**
+ * @brief                   Set a custom value for the zero calibration
+ *
+ * @param calibration       Voltage level at 0ppm
+ *
+ */
+void ElectrochemicalGasSensor::setCustomZeroCalibration(double calibration)
+{
+    type.internalZeroCalibration=calibration;
+}

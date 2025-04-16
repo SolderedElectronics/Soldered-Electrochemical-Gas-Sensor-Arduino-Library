@@ -21,32 +21,23 @@
 // Include the required library
 #include "Electrochemical-Gas-Sensor-SOLDERED.h"
 
-// This is the value used to calibrate the sensor, described below
-const double internalZeroCalibration = 0.078;
+// This is the custom value we set for the calibration voltage
+// This value is added to the voltage read from the ADC
+// In an environment with 0 of the target gas, the voltage after calibration should be
+// roughly 0, adjust customCalibration to get it to that value.
+const double customCalibration = 0.05;
 
-// Let's make a copy of the CO sensor type:
-const sensorType SENSOR_CO_CALIBRATED = {
-    70.0F,                    // nanoAmperesPerPPM
-    internalZeroCalibration,  // internalZeroCalibration
-    ADS_GAIN_4_096V,          // adsGain
-    TIA_GAIN_350_KOHM,        // TIA_GAIN_IN_KOHMS
-    RLOAD_10_OHM,             // RLOAD
-    REF_EXTERNAL,             // REF_SOURCE
-    INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
-    BIAS_SIGN_NEGATIVE,       // BIAS_SIGN
-    BIAS_0_PERCENT,           // BIAS
-    FET_SHORT_DISABLED,       // FET_SHORT
-    OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
-};
 
 // Create the sensor object with the according type
-ElectrochemicalGasSensor sensor(SENSOR_SO2, 0x4B, 32);
+ElectrochemicalGasSensor sensor(SENSOR_NH3, 0x49, 32);
+
+
 
 void setup()
 {
     Serial.begin(115200); // For debugging
 
-    // Init the breakout
+    // Initialize the breakout
     if (!sensor.begin())
     {
         // Can't init? Notify the user and go to infinite loop
@@ -54,6 +45,9 @@ void setup()
         while (true)
             delay(100);
     }
+
+    //Set the custom calibration value
+    sensor.setCustomZeroCalibration(customCalibration);
 
     Serial.println("Sensor initialized successfully!");
 }
@@ -68,9 +62,9 @@ void loop()
     // - The raw voltage measurement
     // - Voltage without reference value
     // - Voltage after calibration
+    // These values can help you adjust the internal zero calibration
 
-    // In an environment with 0 of the target gas, the voltage after calibration should be
-    // roughly 0, adjust internalZeroCalibration to get it to that value.
+    
 
     // Print the reading with 5 digits of precision
     Serial.print("Sensor reading: ");

@@ -14,7 +14,7 @@
 
 // This define will cause debug messages to print in our library
 // Useful when calibrating the sensor
-// #define ELECTROCHEMICAL_SENSOR_DEBUG
+//#define ELECTROCHEMICAL_SENSOR_DEBUG
 
 #include "Arduino.h"
 #include "libs/ADS1X15/ADS1X15.h"
@@ -37,6 +37,7 @@ class ElectrochemicalGasSensor
     double getAveragedPPM(uint8_t _numMeasurements = 5, uint8_t _secondsDelay = 2);
     double getAveragedPPB(uint8_t _numMeasurements = 5, uint8_t _secondsDelay = 2);
     void setCustomTiaGain(float _tiaGain);
+    void setCustomZeroCalibration(double calibration);
 
   private:
     LMP91000 *lmp;
