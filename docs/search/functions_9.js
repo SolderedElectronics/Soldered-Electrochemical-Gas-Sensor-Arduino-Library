@@ -7,9 +7,10 @@ var searchData=
   ['setcomparatorthresholdhigh_4',['setComparatorThresholdHigh',['../class_a_d_s1_x15.html#ab115b947453c7772b2f8a170b684e883',1,'ADS1X15']]],
   ['setcomparatorthresholdlow_5',['setComparatorThresholdLow',['../class_a_d_s1_x15.html#aae23ecf929fb08f329db4701920d985b',1,'ADS1X15']]],
   ['setcustomtiagain_6',['setCustomTiaGain',['../class_electrochemical_gas_sensor.html#a266f95dd46adb3c7953f1a99e8251606',1,'ElectrochemicalGasSensor']]],
-  ['setdatarate_7',['setDataRate',['../class_a_d_s1_x15.html#af03dfa5e77bea05c22dd91b89753744e',1,'ADS1X15']]],
-  ['setgain_8',['setGain',['../class_a_d_s1_x15.html#a5ed082ffa5d6c02707ef3ee2c008caa1',1,'ADS1X15']]],
-  ['setmode_9',['setMode',['../class_a_d_s1_x15.html#a0e12598eaebf2222534f12aafad4435e',1,'ADS1X15']]],
-  ['setwireclock_10',['setWireClock',['../class_a_d_s1_x15.html#a7803d96900f984e54acc12cfced0787d',1,'ADS1X15']]],
-  ['status_11',['status',['../class_l_m_p91000.html#adae2d75643a99d839a77de0917669218',1,'LMP91000']]]
+  ['setcustomzerocalibration_7',['setCustomZeroCalibration',['../class_electrochemical_gas_sensor.html#a69fb2dcf3db01bd96b6b55665c98ba45',1,'ElectrochemicalGasSensor']]],
+  ['setdatarate_8',['setDataRate',['../class_a_d_s1_x15.html#af03dfa5e77bea05c22dd91b89753744e',1,'ADS1X15']]],
+  ['setgain_9',['setGain',['../class_a_d_s1_x15.html#a5ed082ffa5d6c02707ef3ee2c008caa1',1,'ADS1X15']]],
+  ['setmode_10',['setMode',['../class_a_d_s1_x15.html#a0e12598eaebf2222534f12aafad4435e',1,'ADS1X15']]],
+  ['setwireclock_11',['setWireClock',['../class_a_d_s1_x15.html#a7803d96900f984e54acc12cfced0787d',1,'ADS1X15']]],
+  ['status_12',['status',['../class_l_m_p91000.html#adae2d75643a99d839a77de0917669218',1,'LMP91000']]]
 ];
