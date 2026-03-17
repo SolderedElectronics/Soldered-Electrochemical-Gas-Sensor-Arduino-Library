@@ -23,13 +23,13 @@ var searchData=
   ['setgain_20',['setGain',['../class_a_d_s1_x15.html#a5ed082ffa5d6c02707ef3ee2c008caa1',1,'ADS1X15']]],
   ['setmode_21',['setMode',['../class_a_d_s1_x15.html#a0e12598eaebf2222534f12aafad4435e',1,'ADS1X15']]],
   ['setwireclock_22',['setWireClock',['../class_a_d_s1_x15.html#a7803d96900f984e54acc12cfced0787d',1,'ADS1X15']]],
-  ['should_23',['Should',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md55',1,'']]],
-  ['single_20mode_24',['ReadADC Single mode',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md42',1,'']]],
+  ['should_23',['Should',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md55',1,'']]],
+  ['single_20mode_24',['ReadADC Single mode',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md42',1,'']]],
   ['soldered_25',['About Soldered',['../index.html#autotoc_md5',1,'']]],
   ['source_26',['Original source',['../index.html#autotoc_md6',1,'']]],
   ['source_20license_27',['Open-source license',['../index.html#autotoc_md7',1,'']]],
-  ['specific_28',['RP2040 specific',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md52',1,'']]],
-  ['speed_29',['I2C clock speed',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md38',1,'']]],
+  ['specific_28',['RP2040 specific',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md52',1,'']]],
+  ['speed_29',['I2C clock speed',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md38',1,'']]],
   ['src_2flibs_2fads1x15_2freadme_2emd_30',['README.md',['../src_2libs_2_a_d_s1_x15_2_r_e_a_d_m_e_8md.html',1,'']]],
   ['status_31',['status',['../class_l_m_p91000.html#adae2d75643a99d839a77de0917669218',1,'LMP91000']]]
 ];

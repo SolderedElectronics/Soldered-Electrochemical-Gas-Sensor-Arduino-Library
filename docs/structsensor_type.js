@@ -1,6 +1,6 @@
 var structsensor_type =
 [
-    [ "adsGain", "structsensor_type.html#a1823ae706ebc82d1ce6930601c80b1e9", null ],
+    [ "adsGain", "structsensor_type.html#a97f9a648f79ce1233ff48c0070d7149c", null ],
     [ "BIAS", "structsensor_type.html#ae383f5b9550ae5e8d1c2a49c818d7e42", null ],
     [ "BIAS_SIGN", "structsensor_type.html#a2737b36e5f8907b4adb484c4f9886733", null ],
     [ "FET_SHORT", "structsensor_type.html#ad0a5d9ce497a00954cb57266a0bb7a49", null ],

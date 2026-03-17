@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['rate_0',['Data rate',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md41',1,'']]],
+  ['rate_0',['Data rate',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md41',1,'']]],
   ['read_1',['read',['../class_l_m_p91000.html#a37f8bf8e66cc105370dcb8490c7096e8',1,'LMP91000']]],
   ['readadc_2',['readADC',['../class_a_d_s1_x15.html#a021dafbdfe0b0b2231ce2c9af405eab8',1,'ADS1X15']]],
-  ['readadc_20continuous_20mode_3',['ReadADC continuous mode',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md44',1,'']]],
-  ['readadc_20differential_4',['ReadADC Differential',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md43',1,'']]],
-  ['readadc_20single_20mode_5',['ReadADC Single mode',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md42',1,'']]],
+  ['readadc_20continuous_20mode_3',['ReadADC continuous mode',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md44',1,'']]],
+  ['readadc_20differential_4',['ReadADC Differential',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md43',1,'']]],
+  ['readadc_20single_20mode_5',['ReadADC Single mode',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md42',1,'']]],
   ['readadc_5fdifferential_5f0_5f1_6',['readADC_Differential_0_1',['../class_a_d_s1_x15.html#acceb415165f14f090288061372e4096d',1,'ADS1X15']]],
   ['readadc_5fdifferential_5f0_5f2_7',['readADC_Differential_0_2',['../class_a_d_s1015.html#acaffcbeebdeef660e136be5b2d9e3632',1,'ADS1015::readADC_Differential_0_2()'],['../class_a_d_s1115.html#acbfba0c09ea07a7a19fad3762b691754',1,'ADS1115::readADC_Differential_0_2()']]],
   ['readadc_5fdifferential_5f0_5f3_8',['readADC_Differential_0_3',['../class_a_d_s1015.html#a350afc08c7dc234d84ed54d4a029882f',1,'ADS1015::readADC_Differential_0_3()'],['../class_a_d_s1115.html#ad1a0b0b3b4945b8e74d18296cc11ff0f',1,'ADS1115::readADC_Differential_0_3()']]],
@@ -14,16 +14,16 @@ var searchData=
   ['readadc_5fdifferential_5f2_5f3_11',['readADC_Differential_2_3',['../class_a_d_s1015.html#a4eaa89f065b4459bd263d8dc46b7205a',1,'ADS1015::readADC_Differential_2_3()'],['../class_a_d_s1115.html#a074323a5f4f75a3a63d0e4104cce1a19',1,'ADS1115::readADC_Differential_2_3()']]],
   ['readme_2emd_12',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['ref_5fsource_13',['REF_SOURCE',['../structsensor_type.html#a816eb5c2a631d919a26c22d0c9b17b66',1,'sensorType']]],
-  ['registers_14',['Threshold registers',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md45',1,'']]],
-  ['registers_20comparator_20mode_15',['Threshold registers comparator mode',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md51',1,'']]],
+  ['registers_14',['Threshold registers',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md45',1,'']]],
+  ['registers_20comparator_20mode_15',['Threshold registers comparator mode',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md51',1,'']]],
   ['repository_20contents_16',['Repository Contents',['../index.html#autotoc_md1',1,'']]],
   ['requestadc_17',['requestADC',['../class_a_d_s1_x15.html#af6420d8e92a1fdbbe726068bf989736b',1,'ADS1X15']]],
   ['requestadc_5fdifferential_5f0_5f1_18',['requestADC_Differential_0_1',['../class_a_d_s1_x15.html#a2d60926af828cbc81258e06534517ae1',1,'ADS1X15']]],
   ['requestadc_5fdifferential_5f0_5f3_19',['requestADC_Differential_0_3',['../class_a_d_s1015.html#a860150245596dfa7a8ad3c9b482139bd',1,'ADS1015::requestADC_Differential_0_3()'],['../class_a_d_s1115.html#ac58f984d296f059acc854377880b890f',1,'ADS1115::requestADC_Differential_0_3()']]],
   ['requestadc_5fdifferential_5f1_5f3_20',['requestADC_Differential_1_3',['../class_a_d_s1015.html#a2fa325da03407c1a1031920c909a0c14',1,'ADS1015::requestADC_Differential_1_3()'],['../class_a_d_s1115.html#a5b884403334d0507a561cef10083b770',1,'ADS1115::requestADC_Differential_1_3()']]],
   ['requestadc_5fdifferential_5f2_5f3_21',['requestADC_Differential_2_3',['../class_a_d_s1015.html#ae555cb0dad0cb569cfc887ba1895dbc3',1,'ADS1015::requestADC_Differential_2_3()'],['../class_a_d_s1115.html#a046b481ef423bae1bcb4ac518c5abbe9',1,'ADS1115::requestADC_Differential_2_3()']]],
-  ['requested_22',['Wont (unless requested)',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md57',1,'']]],
+  ['requested_22',['Wont (unless requested)',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md57',1,'']]],
   ['reset_23',['reset',['../class_a_d_s1_x15.html#a03c5e75c603fa4872b810add8b2d5c75',1,'ADS1X15']]],
   ['rload_24',['RLOAD',['../structsensor_type.html#a00163e0bfa4a9fe9c0feb710723c4def',1,'sensorType']]],
-  ['rp2040_20specific_25',['RP2040 specific',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md52',1,'']]]
+  ['rp2040_20specific_25',['RP2040 specific',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md52',1,'']]]
 ];

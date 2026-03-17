@@ -13,7 +13,7 @@ var class_electrochemical_gas_sensor =
     [ "setCustomTiaGain", "class_electrochemical_gas_sensor.html#a266f95dd46adb3c7953f1a99e8251606", null ],
     [ "setCustomZeroCalibration", "class_electrochemical_gas_sensor.html#a69fb2dcf3db01bd96b6b55665c98ba45", null ],
     [ "adcAddr", "class_electrochemical_gas_sensor.html#addc289cace70c3fdbbdad7787e316a48", null ],
-    [ "ads", "class_electrochemical_gas_sensor.html#aa91d3c1713d2445c26dbabe444222ed6", null ],
+    [ "ads", "class_electrochemical_gas_sensor.html#a43b0ce0272b933b22ad156d5ea8852ac", null ],
     [ "configPin", "class_electrochemical_gas_sensor.html#a7b04e914e1c78e72b2db19c31d0aaf70", null ],
     [ "internalZeroPercent", "class_electrochemical_gas_sensor.html#a53098c809cff264a2414dab4f790c906", null ],
     [ "lmp", "class_electrochemical_gas_sensor.html#a49e28652c0718d293d255e6471e410b3", null ],

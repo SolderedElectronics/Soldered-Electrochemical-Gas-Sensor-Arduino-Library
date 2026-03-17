@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['latch_0',['Latch',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md49',1,'']]],
+  ['latch_0',['Latch',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md49',1,'']]],
   ['library_1',['Electrochemical Gas Sensor Breakout Arduino library',['../index.html',1,'']]],
   ['license_2',['Open-source license',['../index.html#autotoc_md7',1,'']]],
   ['lmp_3',['lmp',['../class_electrochemical_gas_sensor.html#a49e28652c0718d293d255e6471e410b3',1,'ElectrochemicalGasSensor']]],

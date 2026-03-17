@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gain_0',['Programmable Gain',['..//github/workspace/gh-pages/src/libs/ADS1X15/README.md#autotoc_md39',1,'']]],
+  ['gain_0',['Programmable Gain',['../dir_8fffdf23cc1bab5d587079d429a41271.html#autotoc_md39',1,'']]],
   ['gas_20sensor_20breakout_20arduino_20library_1',['Electrochemical Gas Sensor Breakout Arduino library',['../index.html',1,'']]],
   ['getaveragedppb_2',['getAveragedPPB',['../class_electrochemical_gas_sensor.html#a85e812ea2055a4a606734b97d1a1170e',1,'ElectrochemicalGasSensor']]],
   ['getaveragedppm_3',['getAveragedPPM',['../class_electrochemical_gas_sensor.html#a58bef4a924c3ed8d89701d58311c42c8',1,'ElectrochemicalGasSensor']]],
