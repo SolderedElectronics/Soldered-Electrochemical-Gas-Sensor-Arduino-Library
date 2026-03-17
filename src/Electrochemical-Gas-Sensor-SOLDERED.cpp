@@ -38,11 +38,8 @@ bool ElectrochemicalGasSensor::begin()
     Wire.begin();
 
     // Create objects in memory
-    lmp = (LMP91000 *)malloc(sizeof(LMP91000));
     lmp = new LMP91000();
-
-    ads = (ADS1015 *)malloc(sizeof(ADS1015));
-    ads = new ADS1015(adcAddr);
+    ads = new ADS1115(adcAddr);
 
     // Begin ADS
     bool result = ads->begin();
@@ -161,7 +158,7 @@ double ElectrochemicalGasSensor::getPPM()
     Serial.println("");
 #endif
 
-    double current = voltsNoRef / (tiaGainInKOHms * 1000);
+    double current = voltsNoRef / tiaGainInKOHms;
     double ppm = current / (type.nanoAmperesPerPPM * (double)1e-9);
 
     // Due to noise when making really small precise measurements (in ppb)

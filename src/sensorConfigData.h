@@ -65,13 +65,14 @@
 #define OP_MODE_TEMPERATURE_TIA_OFF 0x06
 #define OP_MODE_TEMPERATURE_TIA_ON  0x07
 
-// Defines for settings the ADS gain
-#define ADS_GAIN_6_144V 0x0000
-#define ADS_GAIN_4_096V 0x0200
-#define ADS_GAIN_2_048V 0x0400
-#define ADS_GAIN_1_024V 0x0600
-#define ADS_GAIN_0_512V 0x0800
-#define ADS_GAIN_0_256V 0x0A00
+// Defines for setting the ADS gain
+// These must match the integer indices expected by ADS1X15::setGain()
+#define ADS_GAIN_6_144V 0
+#define ADS_GAIN_4_096V 1
+#define ADS_GAIN_2_048V 2
+#define ADS_GAIN_1_024V 4
+#define ADS_GAIN_0_512V 8
+#define ADS_GAIN_0_256V 16
 
 // The struct which holds the sensor type and is used in init'ing the breakout
 // Also, the data from here is used to calcualte PPM
@@ -82,7 +83,7 @@ struct sensorType
 {
     double nanoAmperesPerPPM;
     double internalZeroCalibration;
-    uint16_t adsGain;
+    uint8_t adsGain;
     uint8_t TIA_GAIN_IN_KOHMS;
     uint8_t RLOAD;
     uint8_t REF_SOURCE;
@@ -100,9 +101,9 @@ struct sensorType
 // SGX-4CO - Carbon Monoxide sensor
 const sensorType SENSOR_CO = {
     70.0F,                    // nanoAmperesPerPPM
-    0.078,                    // internalZeroCalibration
+    0,                    // internalZeroCalibration
     ADS_GAIN_4_096V,          // adsGain
-    TIA_GAIN_350_KOHM,        // TIA_GAIN_IN_KOHMS
+    TIA_GAIN_14_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,             // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
     INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
@@ -115,9 +116,9 @@ const sensorType SENSOR_CO = {
 // SGX-4NO2 - Nitrogen Dioxide sensor
 const sensorType SENSOR_NO2 = {
     -600.0F,                  // nanoAmperesPerPPM
-    -0.015,                   // internalZeroCalibration
+    0,                   // internalZeroCalibration
     ADS_GAIN_2_048V,          // adsGain
-    TIA_GAIN_350_KOHM,        // TIA_GAIN_IN_KOHMS
+    TIA_GAIN_35_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,             // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
     INTERNAL_ZERO_67_PERCENT, // INTERNAL_ZERO
@@ -130,8 +131,8 @@ const sensorType SENSOR_NO2 = {
 // SGX-4SO2 - Sulphur Dioxide sensor
 const sensorType SENSOR_SO2 = {
     400.0F,                   // nanoAmperesPerPPM
-    0.1,                      // internalZeroCalibration
-    ADS_GAIN_2_048V,          // adsGain
+    0,                      // internalZeroCalibration
+    ADS_GAIN_4_096V,          // adsGain
     TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,             // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
@@ -143,15 +144,18 @@ const sensorType SENSOR_SO2 = {
 };
 
 // SGX-403-20 - Ozone sensor
+// O3 is an oxidizing gas with negative polarity output (like NO2)
+// Internal zero at 67% provides headroom for downward output swing
+// 35kOhm TIA covers the full 0-20ppm range without saturation
 const sensorType SENSOR_O3 = {
     -1000.0F,                  // nanoAmperesPerPPM
-    -1.65,                      // internalZeroCalibration
+    -0.0012,                   // internalZeroCalibration
     ADS_GAIN_2_048V,          // adsGain
-    TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
-    RLOAD_10_OHM,            // RLOAD
+    TIA_GAIN_35_KOHM,         // TIA_GAIN_IN_KOHMS
+    RLOAD_10_OHM,             // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
-    INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
-    BIAS_SIGN_POSITIVE,       // BIAS_SIGN
+    INTERNAL_ZERO_67_PERCENT, // INTERNAL_ZERO
+    BIAS_SIGN_NEGATIVE,       // BIAS_SIGN
     BIAS_0_PERCENT,           // BIAS
     FET_SHORT_DISABLED,       // FET_SHORT
     OP_MODE_3LEAD_AMP_CELL,   // OP_MODE
@@ -160,8 +164,8 @@ const sensorType SENSOR_O3 = {
 // SGX-4NO-250 - Nitric Oxide sensor
 const sensorType SENSOR_NO = {
     400.0F,                  // nanoAmperesPerPPM
-    0.5,                      // internalZeroCalibration
-    ADS_GAIN_2_048V,          // adsGain
+    0,                      // internalZeroCalibration
+    ADS_GAIN_4_096V,          // adsGain
     TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,            // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
@@ -175,9 +179,9 @@ const sensorType SENSOR_NO = {
 // SGX-4H2S-100 - Hydrogen Sulphide sensor
 const sensorType SENSOR_H2S = {
     1200.0F,                  // nanoAmperesPerPPM
-    0.1,                      // internalZeroCalibration
-    ADS_GAIN_2_048V,          // adsGain
-    TIA_GAIN_350_KOHM,        // TIA_GAIN_IN_KOHMS
+    0,                      // internalZeroCalibration
+    ADS_GAIN_4_096V,          // adsGain
+    TIA_GAIN_7_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,            // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
     INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
@@ -190,9 +194,9 @@ const sensorType SENSOR_H2S = {
 // SGX-4NH3-300 - Ammonia sensor
 const sensorType SENSOR_NH3 = {
     40.0F,                  // nanoAmperesPerPPM
-    0.5,                      // internalZeroCalibration
-    ADS_GAIN_2_048V,          // adsGain
-    TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
+    0,                      // internalZeroCalibration
+    ADS_GAIN_4_096V,          // adsGain
+    TIA_GAIN_35_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_10_OHM,            // RLOAD
     REF_EXTERNAL,             // REF_SOURCE
     INTERNAL_ZERO_20_PERCENT, // INTERNAL_ZERO
@@ -205,8 +209,8 @@ const sensorType SENSOR_NH3 = {
 // SGX-4CL2 - Chlorine sensor
 const sensorType SENSOR_CL2 = {
     600.0F,                  // nanoAmperesPerPPM
-    0.5,                      // internalZeroCalibration
-    ADS_GAIN_2_048V,          // adsGain
+    0,                      // internalZeroCalibration
+    ADS_GAIN_4_096V,          // adsGain
     TIA_GAIN_120_KOHM,        // TIA_GAIN_IN_KOHMS
     RLOAD_33_OHM,            // RLOAD
     REF_EXTERNAL,             // REF_SOURCE

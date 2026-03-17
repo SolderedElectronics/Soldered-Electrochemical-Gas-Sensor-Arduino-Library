@@ -41,7 +41,7 @@ class ElectrochemicalGasSensor
 
   private:
     LMP91000 *lmp;
-    ADS1015 *ads;
+    ADS1115 *ads;
     uint8_t adcAddr;
     int configPin;
     sensorType type;
