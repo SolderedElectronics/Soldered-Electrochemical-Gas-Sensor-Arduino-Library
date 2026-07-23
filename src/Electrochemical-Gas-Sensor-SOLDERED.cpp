@@ -16,7 +16,9 @@
  *
  * @param sensorType _t     The type of the sensor
  *
- * @param uint8_t _adcAddr  The custom address of the ADC
+ * @param uint8_t _adcAddr  Legacy board: the ADS1115's own address (0x48-0x4B).
+ *                          ATtiny bridge board: the bridge's easyC address (0x30-0x37).
+ *                          begin() picks the transport based on which range this falls in.
  *
  */
 ElectrochemicalGasSensor::ElectrochemicalGasSensor(sensorType _t, uint8_t _adcAddr, int _configPin)
@@ -24,6 +26,7 @@ ElectrochemicalGasSensor::ElectrochemicalGasSensor(sensorType _t, uint8_t _adcAd
     adcAddr = _adcAddr;
     type = _t;
     configPin = _configPin;
+    mode = TransportMode::LEGACY_DIRECT; // safe default until begin() determines the real mode
 }
 
 /**
@@ -37,27 +40,49 @@ bool ElectrochemicalGasSensor::begin()
     // Init twoWire communication
     Wire.begin();
 
-    // Create objects in memory
-    lmp = new LMP91000();
-    ads = new ADS1115(adcAddr);
+    // Decide which board revision we're talking to: ATtiny bridge boards use the
+    // easyC jumper address range, legacy direct-wired boards use the ADS1115's own.
+    mode = (adcAddr >= BRIDGE_ADDR_MIN && adcAddr <= BRIDGE_ADDR_MAX) ? TransportMode::BRIDGE
+                                                                      : TransportMode::LEGACY_DIRECT;
 
-    // Begin ADS
-    bool result = ads->begin();
-    ads->setGain(type.adsGain); // Set gain to the one which is in the config
-    ads->setDataRate(0);        // Set data rate to slowest for more precision
+    bool result;
 
-    // Begin the config pin if it's set
-    if (configPin != -1)
+    if (mode == TransportMode::LEGACY_DIRECT)
     {
-        pinMode(configPin, OUTPUT);
-        digitalWrite(configPin, HIGH); // Disable LMP config at first
+        // Create objects in memory
+        lmp = new LMP91000();
+        ads = new ADS1115(adcAddr);
+
+        // Begin ADS
+        result = ads->begin();
+        ads->setGain(type.adsGain); // Set gain to the one which is in the config
+        ads->setDataRate(0);        // Set data rate to slowest for more precision
+
+        // Begin the config pin if it's set
+        if (configPin != -1)
+        {
+            pinMode(configPin, OUTPUT);
+            digitalWrite(configPin, HIGH); // Disable LMP config at first
+        }
+    }
+    else // TransportMode::BRIDGE
+    {
+        // ads is only ever used here for its toVoltage()/getMaxVoltage() math - it
+        // never issues any I2C traffic of its own in bridge mode.
+        ads = new ADS1115();
+        ads->setGain(type.adsGain);
+        ads->setDataRate(0);
+
+        result = pingBridge();
+        result &= sendConfigureAdc(type.adsGain, 0);
+        // configPin is unused here - LMPEN is hardwired to GND on the bridge board.
     }
 
     // Now, configure the LMP analog frontend as well:
     result &= configureLMP();
 
 
-    // Will return 1 if both ads->begin and configureLMP() were OK
+    // Will return 1 if both the transport-specific setup and configureLMP() were OK
     return result;
 }
 
@@ -69,10 +94,6 @@ bool ElectrochemicalGasSensor::begin()
  */
 bool ElectrochemicalGasSensor::configureLMP()
 {
-    // If there is a pin set for configuring, pull it LOW
-    if (configPin != -1)
-        digitalWrite(configPin, LOW);
-
     // Crate the values to write in the sensor to configure it
     // tiacn register
     uint8_t tiacn = 0x00;
@@ -91,16 +112,29 @@ bool ElectrochemicalGasSensor::configureLMP()
     modecn |= (type.FET_SHORT << 7);
     modecn |= type.OP_MODE;
 
-    // Configure it!
-    uint8_t res = lmp->configure(tiacn, refcn, modecn);
+    uint8_t res;
+
+    if (mode == TransportMode::LEGACY_DIRECT)
+    {
+        // If there is a pin set for configuring, pull it LOW
+        if (configPin != -1)
+            digitalWrite(configPin, LOW);
+
+        // Configure it!
+        res = lmp->configure(tiacn, refcn, modecn);
+
+        // Disable config again
+        if (configPin != -1)
+            digitalWrite(configPin, HIGH);
+    }
+    else // TransportMode::BRIDGE - LMPEN is grounded on the board, nothing to toggle
+    {
+        res = sendConfigureLmp(tiacn, refcn, modecn);
+    }
 
     // Save key variables in the class as well so we don't have to keep getting them:
     tiaGainInKOHms = getTiaGain();
     internalZeroPercent = getInternalZeroPercent();
-
-    // Disable config again
-    if (configPin != -1)
-        digitalWrite(configPin, HIGH);
 
     // Notify the user if the configuration went well or not
     return res;
@@ -115,7 +149,12 @@ bool ElectrochemicalGasSensor::configureLMP()
 double ElectrochemicalGasSensor::getVoltage()
 {
     // Get raw reading and calculate voltage
-    int16_t rawReading = ads->readADC(0);
+    int16_t rawReading;
+    if (mode == TransportMode::LEGACY_DIRECT)
+        rawReading = ads->readADC(0);
+    else
+        triggerAndReadAdc(rawReading);
+
     double voltage = ads->toVoltage(rawReading);
     return voltage;
 }
@@ -319,4 +358,74 @@ float ElectrochemicalGasSensor::getInternalZeroPercent()
 void ElectrochemicalGasSensor::setCustomZeroCalibration(double calibration)
 {
     type.internalZeroCalibration=calibration;
+}
+
+/**
+ * @brief                   Send a command to the ATtiny bridge and poll the 3-byte response
+ *
+ * @note                    Blocking - protocol is synchronous, one command in flight at a time.
+ *                          Only used when mode == TransportMode::BRIDGE.
+ *
+ * @returns                 True if the bridge answered OK before the timeout, false on error/timeout
+ *
+ */
+bool ElectrochemicalGasSensor::bridgeTransaction(uint8_t cmd, const uint8_t *payload, uint8_t payloadLen,
+                                                  uint8_t *resultHigh, uint8_t *resultLow)
+{
+    Wire.beginTransmission(adcAddr);
+    Wire.write(cmd);
+    for (uint8_t i = 0; i < payloadLen; i++)
+        Wire.write(payload[i]);
+    Wire.endTransmission();
+
+    unsigned long start = millis();
+    while (millis() - start < BRIDGE_TIMEOUT_MS)
+    {
+        Wire.requestFrom(adcAddr, (uint8_t)3);
+        if (Wire.available() < 3)
+            continue;
+
+        uint8_t status = Wire.read();
+        uint8_t hi = Wire.read();
+        uint8_t lo = Wire.read();
+
+        if (status == BRIDGE_STATUS_OK)
+        {
+            if (resultHigh)
+                *resultHigh = hi;
+            if (resultLow)
+                *resultLow = lo;
+            return true;
+        }
+        if (status == BRIDGE_STATUS_ERROR)
+            return false;
+
+        delay(5); // still BUSY or no command registered yet - retry
+    }
+    return false; // timeout
+}
+
+bool ElectrochemicalGasSensor::pingBridge()
+{
+    return bridgeTransaction(CMD_PING, nullptr, 0, nullptr, nullptr);
+}
+
+bool ElectrochemicalGasSensor::sendConfigureAdc(uint8_t gain, uint8_t dataRate)
+{
+    uint8_t payload[2] = {gain, dataRate};
+    return bridgeTransaction(CMD_CONFIGURE_ADC, payload, 2, nullptr, nullptr);
+}
+
+bool ElectrochemicalGasSensor::sendConfigureLmp(uint8_t tiacn, uint8_t refcn, uint8_t modecn)
+{
+    uint8_t payload[3] = {tiacn, refcn, modecn};
+    return bridgeTransaction(CMD_CONFIGURE_LMP, payload, 3, nullptr, nullptr);
+}
+
+bool ElectrochemicalGasSensor::triggerAndReadAdc(int16_t &rawOut)
+{
+    uint8_t hi = 0, lo = 0;
+    bool ok = bridgeTransaction(CMD_TRIGGER_ADC, nullptr, 0, &hi, &lo);
+    rawOut = (int16_t)(((uint16_t)hi << 8) | lo);
+    return ok;
 }
