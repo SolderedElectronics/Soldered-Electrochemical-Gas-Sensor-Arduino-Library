@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['op_5fmode_0',['OP_MODE',['../structsensor_type.html#af485c7ffd7d1e201a30ff291e0390822',1,'sensorType']]]
+  ['nanoamperesperppm_0',['nanoAmperesPerPPM',['../structsensor_type.html#a75054db014ac0cf59ba32de94f5146e0',1,'sensorType']]]
 ];

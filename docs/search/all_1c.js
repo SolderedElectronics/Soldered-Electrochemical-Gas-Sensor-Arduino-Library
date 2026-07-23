@@ -5,5 +5,7 @@ var searchData=
   ['tia_5fgain_5fin_5fkohms_2',['TIA_GAIN_IN_KOHMS',['../structsensor_type.html#a814da7065a6ae5d641d4139697008b0c',1,'sensorType']]],
   ['tiagaininkohms_3',['tiaGainInKOHms',['../class_electrochemical_gas_sensor.html#ac59df5b15598473628f827a8b9a4707e',1,'ElectrochemicalGasSensor']]],
   ['tovoltage_4',['toVoltage',['../class_a_d_s1_x15.html#a00bf12e240c4a92e9a9331feb35f59ca',1,'ADS1X15']]],
-  ['type_5',['type',['../class_electrochemical_gas_sensor.html#a34239d09a2b5e97cae243055b9363cf2',1,'ElectrochemicalGasSensor']]]
+  ['transportmode_5',['TransportMode',['../_electrochemical-_gas-_sensor-_s_o_l_d_e_r_e_d_8h.html#a7da451ea98698efab30ae9da58bb4efe',1,'Electrochemical-Gas-Sensor-SOLDERED.h']]],
+  ['triggerandreadadc_6',['triggerAndReadAdc',['../class_electrochemical_gas_sensor.html#af03f2f3020392b07328a5963d4a2b5a6',1,'ElectrochemicalGasSensor']]],
+  ['type_7',['type',['../class_electrochemical_gas_sensor.html#a34239d09a2b5e97cae243055b9363cf2',1,'ElectrochemicalGasSensor']]]
 ];

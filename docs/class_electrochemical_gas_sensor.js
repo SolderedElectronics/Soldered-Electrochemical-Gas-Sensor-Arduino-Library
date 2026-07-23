@@ -2,6 +2,7 @@ var class_electrochemical_gas_sensor =
 [
     [ "ElectrochemicalGasSensor", "class_electrochemical_gas_sensor.html#ad7f52a7912648bbc4d87c593c1faf044", null ],
     [ "begin", "class_electrochemical_gas_sensor.html#a6808282d4d9e0a45c85c7a08e34650a9", null ],
+    [ "bridgeTransaction", "class_electrochemical_gas_sensor.html#af61c87b48bb96c106d2b4f54428be7c1", null ],
     [ "configureLMP", "class_electrochemical_gas_sensor.html#adb4e36af5469765f8b11f834211dc920", null ],
     [ "getAveragedPPB", "class_electrochemical_gas_sensor.html#a85e812ea2055a4a606734b97d1a1170e", null ],
     [ "getAveragedPPM", "class_electrochemical_gas_sensor.html#a58bef4a924c3ed8d89701d58311c42c8", null ],
@@ -10,13 +11,18 @@ var class_electrochemical_gas_sensor =
     [ "getPPM", "class_electrochemical_gas_sensor.html#ad577d4129ef7b60d23a8313525a93154", null ],
     [ "getTiaGain", "class_electrochemical_gas_sensor.html#ac7da43045df360716d30029e85545b18", null ],
     [ "getVoltage", "class_electrochemical_gas_sensor.html#a4d612f94dd55af783c1e3eccb9a1b0c9", null ],
+    [ "pingBridge", "class_electrochemical_gas_sensor.html#aa22bfd284468e7ae28fcbb67ba683e34", null ],
+    [ "sendConfigureAdc", "class_electrochemical_gas_sensor.html#affbe0a3417370379afec611801919a8a", null ],
+    [ "sendConfigureLmp", "class_electrochemical_gas_sensor.html#a00ba66d20089b46d9d6263b700e2566d", null ],
     [ "setCustomTiaGain", "class_electrochemical_gas_sensor.html#a266f95dd46adb3c7953f1a99e8251606", null ],
     [ "setCustomZeroCalibration", "class_electrochemical_gas_sensor.html#a69fb2dcf3db01bd96b6b55665c98ba45", null ],
+    [ "triggerAndReadAdc", "class_electrochemical_gas_sensor.html#af03f2f3020392b07328a5963d4a2b5a6", null ],
     [ "adcAddr", "class_electrochemical_gas_sensor.html#addc289cace70c3fdbbdad7787e316a48", null ],
     [ "ads", "class_electrochemical_gas_sensor.html#a43b0ce0272b933b22ad156d5ea8852ac", null ],
     [ "configPin", "class_electrochemical_gas_sensor.html#a7b04e914e1c78e72b2db19c31d0aaf70", null ],
     [ "internalZeroPercent", "class_electrochemical_gas_sensor.html#a53098c809cff264a2414dab4f790c906", null ],
     [ "lmp", "class_electrochemical_gas_sensor.html#a49e28652c0718d293d255e6471e410b3", null ],
+    [ "mode", "class_electrochemical_gas_sensor.html#a66d68d3bba8e56d25179e5d2deb81fb8", null ],
     [ "tiaGainInKOHms", "class_electrochemical_gas_sensor.html#ac59df5b15598473628f827a8b9a4707e", null ],
     [ "type", "class_electrochemical_gas_sensor.html#a34239d09a2b5e97cae243055b9363cf2", null ]
 ];
